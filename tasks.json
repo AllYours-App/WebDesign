@@ -212,11 +212,11 @@
     "id": "WEB-020",
     "domaine": "Sites web",
     "titre": "Incohérence emails (01) et tableau de suivi (04) : colonnes qui n'existent pas",
-    "statut": "en cours",
+    "statut": "fait",
     "priorite": "cette semaine",
     "compte": "Web",
     "brief": "01 demande [Prénom] depuis une \"colonne Nom\" du tableau, mais 04 n'a aucune colonne pour le prénom ou le nom du contact (seulement Nom de l'entreprise). Les noms de colonnes cités dans 01 et 03 diffèrent aussi de ceux de 04 : \"Date 1er contact\" au lieu de \"Date du 1er contact\", \"Relance 1\" et \"Relance 2\" au lieu de \"Relance 1 envoyée le\" et \"Relance 2 envoyée le\". Ajouter une colonne contact à 04 (en gardant les formules) et aligner les noms dans 01 et 03.",
-    "etat": "Écart relevé à la lecture du repo, pas corrigé.",
+    "etat": "Fait : colonne Prénom du dirigeant ajoutée en C dans 04 (formules, listes, alertes et synthèse décalées, testés sur données d'essai : résultats identiques). Noms de colonnes alignés dans 01, 02 et 03. Légende : prénom à effacer en cas d'opposition.",
     "date": "2026-11-21"
   },
   {
