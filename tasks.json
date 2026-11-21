@@ -234,34 +234,34 @@
     "id": "WEB-022",
     "domaine": "Sites web",
     "titre": "Incohérence plan 1.5 : \"Cloudflare Pages\" au lieu de Workers",
-    "statut": "à faire",
+    "statut": "fait",
     "priorite": "plus tard",
     "compte": "Web",
     "brief": "Le plan 1.5 dit Cloudflare Pages, mais l'adresse provisoire est en workers.dev, le plan 1.10 parle d'un Worker et le panorama des outils de Cloudflare Workers. Corriger le libellé du plan.",
-    "etat": "Écart relevé à la lecture du repo, pas corrigé.",
-    "date": "2026-11-20"
+    "etat": "Fait : plan 1.5 dit Cloudflare Workers.",
+    "date": "2026-11-21"
   },
   {
     "id": "WEB-023",
     "domaine": "Sites web",
     "titre": "Incohérence : phases 6 à 8 en double et différentes",
-    "statut": "à faire",
+    "statut": "en cours",
     "priorite": "plus tard",
     "compte": "Web",
     "brief": "plan-de-lancement.docx (14 oct) et plan-de-lancement-client.docx (11 oct) contiennent les mêmes phases 6 à 8 avec des écarts : qui fait 6.8 (Toi + client / Client + toi), 6.10 (Toi / Toi + moi), 6.14 et 6.20 formulés autrement. Garder le plan client comme référence et remplacer les phases 6 à 8 du plan général par un renvoi.",
     "etat": "Écart relevé à la lecture du repo, pas corrigé.",
-    "date": "2026-11-20"
+    "date": "2026-11-21"
   },
   {
     "id": "WEB-024",
     "domaine": "Sites web",
     "titre": "Incohérence plan 2.5 : \"11 réponses\" alors que le script en a 12",
-    "statut": "à faire",
+    "statut": "fait",
     "priorite": "plus tard",
     "compte": "Web",
     "brief": "Le plan 2.5 annonce 11 réponses aux objections, 02-script-appel.docx en contient 12. Corriger le plan.",
-    "etat": "Écart relevé à la lecture du repo, pas corrigé.",
-    "date": "2026-11-20"
+    "etat": "Fait : plan 2.5 dit 12 réponses (le script 02 en compte 12, vérifié dans le tableau).",
+    "date": "2026-11-21"
   },
   {
     "id": "WEB-025",
