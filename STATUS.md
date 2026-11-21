@@ -28,7 +28,7 @@ Incohérences relevées (WEB-002, 010, 011, 019 à 025) :
 - Frais de tiers : réglé (option A seule), WEB-025.
 - Emails 01 : variable [Prénom] sans colonne correspondante dans le tableau 04.
 - Mode d'emploi client : renvoie à l'article 12 au lieu du 11.
-- Plan : phases 6 à 8 en double (WEB-023). Réglés : 5 pages contre 4 (WEB-021), Pages contre Workers (WEB-022), 11 réponses contre 12 (WEB-024).
+- Plan : toutes les incohérences relevées sont réglées (WEB-021 à 024).
 
 Prochaine étape :
 - Décisions tirées du site en ligne : acompte 30 % / 70 %, délai de 5 jours (réponses client sous 5 jours ouvrés), option A pour le domaine. J'aligne les documents du repo : WEB-002, 010, 019, 020 et 025 faits (acompte, délai, option A, mode d'emploi, tableau de suivi).
@@ -39,4 +39,4 @@ Prochaine étape :
 - Choisir une plateforme de facturation électronique (réception obligatoire depuis le 2026-09-01).
 
 Mis à jour le : 2026-11-21
-Rythme : 13 tâches terminées sur la dernière fenêtre de 5 h
+Rythme : 14 tâches terminées sur la dernière fenêtre de 5 h
