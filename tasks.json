@@ -102,12 +102,12 @@
     "id": "WEB-010",
     "domaine": "Sites web",
     "titre": "Incohérence mode d'emploi client (10) : mauvais renvoi d'article",
-    "statut": "à faire",
+    "statut": "fait",
     "priorite": "cette semaine",
     "compte": "Web",
     "brief": "Le mode d'emploi renvoie à l'article 12 du contrat (données personnelles) pour les devis après livraison : c'est l'article 11 du contrat et l'article 8 des CGV. La phrase sur le rappel du domaine (dans 1 an, 60 jours avant l'échéance) est ambiguë et ne dit pas la même chose que l'article 6 du contrat (rappel pour renouveler dans 1 an).",
-    "etat": "Écart relevé, pas corrigé.",
-    "date": "2026-11-20"
+    "etat": "Fait : renvoi corrigé (article 11 du contrat et article 8 des CGV) ; rappel du domaine reformulé : renouveler dans 1 an, première alerte 60 jours avant l'échéance, comme l'article 6 du contrat.",
+    "date": "2026-11-21"
   },
   {
     "id": "WEB-011",
@@ -212,12 +212,12 @@
     "id": "WEB-020",
     "domaine": "Sites web",
     "titre": "Incohérence emails (01) et tableau de suivi (04) : colonnes qui n'existent pas",
-    "statut": "à faire",
+    "statut": "en cours",
     "priorite": "cette semaine",
     "compte": "Web",
     "brief": "01 demande [Prénom] depuis une \"colonne Nom\" du tableau, mais 04 n'a aucune colonne pour le prénom ou le nom du contact (seulement Nom de l'entreprise). Les noms de colonnes cités dans 01 et 03 diffèrent aussi de ceux de 04 : \"Date 1er contact\" au lieu de \"Date du 1er contact\", \"Relance 1\" et \"Relance 2\" au lieu de \"Relance 1 envoyée le\" et \"Relance 2 envoyée le\". Ajouter une colonne contact à 04 (en gardant les formules) et aligner les noms dans 01 et 03.",
     "etat": "Écart relevé à la lecture du repo, pas corrigé.",
-    "date": "2026-11-20"
+    "date": "2026-11-21"
   },
   {
     "id": "WEB-021",
