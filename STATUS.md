@@ -31,7 +31,7 @@ Incohérences relevées (WEB-002, 010, 011, 019 à 025) :
 - Plan : Pages contre Workers, phases 6 à 8 en double, 11 réponses contre 12. (5 pages contre 4 : réglé, WEB-021.)
 
 Prochaine étape :
-- Décisions tirées du site en ligne : acompte 30 % / 70 %, délai de 5 jours (réponses client sous 5 jours ouvrés), option A pour le domaine. J'aligne les documents du repo : WEB-002, 010, 019 et 025 faits (acompte, délai, option A, mode d'emploi), WEB-020 en cours.
+- Décisions tirées du site en ligne : acompte 30 % / 70 %, délai de 5 jours (réponses client sous 5 jours ouvrés), option A pour le domaine. J'aligne les documents du repo : WEB-002, 010, 019, 020 et 025 faits (acompte, délai, option A, mode d'emploi, tableau de suivi).
 - Plus aucune décision en attente.
 - Choisir les codes NAF, lancer 05-liste-sirene.py.
 - Mettre en ligne la section Prospection de la politique de confidentialité avant tout premier email.
@@ -39,4 +39,4 @@ Prochaine étape :
 - Choisir une plateforme de facturation électronique (réception obligatoire depuis le 2026-09-01).
 
 Mis à jour le : 2026-11-21
-Rythme : 10 tâches terminées sur la dernière fenêtre de 5 h
+Rythme : 11 tâches terminées sur la dernière fenêtre de 5 h
