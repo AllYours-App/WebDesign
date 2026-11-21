@@ -135,12 +135,12 @@
     "id": "WEB-013",
     "domaine": "Sites web",
     "titre": "Remplir suivi-seo.xlsx pour ducoinweb.fr",
-    "statut": "à faire",
+    "statut": "en cours",
     "priorite": "plus tard",
     "compte": "Web",
     "brief": "Checklist : 41 tâches Base et 16 Renforcé, toutes à faire. Onglet Pages : une ligne d'exemple à remplacer par les pages réelles (title, meta, indexation). À faire après WEB-001.",
     "etat": "Fichier non rempli.",
-    "date": "2026-11-20"
+    "date": "2026-11-21"
   },
   {
     "id": "WEB-014",
@@ -245,11 +245,11 @@
     "id": "WEB-023",
     "domaine": "Sites web",
     "titre": "Incohérence : phases 6 à 8 en double et différentes",
-    "statut": "en cours",
+    "statut": "fait",
     "priorite": "plus tard",
     "compte": "Web",
     "brief": "plan-de-lancement.docx (14 oct) et plan-de-lancement-client.docx (11 oct) contiennent les mêmes phases 6 à 8 avec des écarts : qui fait 6.8 (Toi + client / Client + toi), 6.10 (Toi / Toi + moi), 6.14 et 6.20 formulés autrement. Garder le plan client comme référence et remplacer les phases 6 à 8 du plan général par un renvoi.",
-    "etat": "Écart relevé à la lecture du repo, pas corrigé.",
+    "etat": "Fait : phases 6 à 8 du plan général remplacées par un renvoi vers le plan client. Seul écart utile du général repris dans le client (note DNSSEC en 7.8). Délais \"5 jours ouvrés\" corrigés dans le plan client (suite de WEB-019).",
     "date": "2026-11-21"
   },
   {
