@@ -135,11 +135,11 @@
     "id": "WEB-013",
     "domaine": "Sites web",
     "titre": "Remplir suivi-seo.xlsx pour ducoinweb.fr",
-    "statut": "en cours",
+    "statut": "fait",
     "priorite": "plus tard",
     "compte": "Web",
     "brief": "Checklist : 41 tâches Base et 16 Renforcé, toutes à faire. Onglet Pages : une ligne d'exemple à remplacer par les pages réelles (title, meta, indexation). À faire après WEB-001.",
-    "etat": "Fichier non rempli.",
+    "etat": "Fait : Synthèse renseignée, onglet Pages rempli avec les 14 pages du sitemap, 26 tâches de la checklist vérifiées dans le dépôt (23 faites, 3 en cours). Avancement Base : 23 sur 41. Reste non vérifiable hors ligne : HTTPS et redirections, performance, indexation page par page.",
     "date": "2026-11-21"
   },
   {
@@ -149,7 +149,7 @@
     "statut": "à faire",
     "priorite": "plus tard",
     "compte": "Web",
-    "brief": "Titres et textes par intention de recherche. Le site compte aujourd'hui 4 pages publiques. Plan 3.4.",
+    "brief": "Titres et textes par intention de recherche. Le site compte 14 pages publiques (accueil, Tarifs, Réalisations, Déroulement, FAQ, À propos, Contact, 4 guides, mentions légales, confidentialité, CGV). Plan 3.4.",
     "etat": "Pas commencé.",
     "date": "2026-11-20"
   },
@@ -157,12 +157,12 @@
     "id": "WEB-015",
     "domaine": "Sites web",
     "titre": "Page contact : performance mobile de 89 à 90 ou plus",
-    "statut": "à faire",
+    "statut": "bloqué",
     "priorite": "plus tard",
     "compte": "Web",
     "brief": "Lighthouse mobile : contact à 89 en performance, objectif 90 et plus (phase 8.3). Le calendrier meetergo est déjà chargé après l'affichage. Besoin du rapport JSON de la page pour corriger.",
-    "etat": "Score relevé le 2026-10, pas de correction faite.",
-    "date": "2026-11-20"
+    "etat": "Bloqué : j'ai besoin du rapport Lighthouse JSON de la page contact (WEB-028).",
+    "date": "2026-11-21"
   },
   {
     "id": "WEB-016",
@@ -294,6 +294,28 @@
     "compte": "Moi",
     "brief": "3 modifications dans le dépôt du site. Accueil : \"Fiche Google Business Profile créée à votre nom\" devient \"Fiche Google Business Profile à votre nom, si votre activité y est éligible\", idem dans la liste de l'Essentiel et dans la phrase \"Je crée aussi votre fiche...\". Tarifs : ligne \"Fiche Google Business Profile\", \"Inclus\" devient \"Inclus si éligible\" (Essentiel et Complet). CGV art. 2 : \"...avec référencement de base et création de la fiche Google Business Profile\" devient \"...avec référencement de base et, lorsque l'activité du client y est éligible selon les règles de Google, création de la fiche Google Business Profile\". À vérifier aussi : pages FAQ et Déroulement, non lues.",
     "etat": "Fait : \"sous réserve d'éligibilité\" visible en ligne (confirmé par Moi, 2026-11-21) sur accueil, Tarifs, CGV, FAQ et Déroulement.",
+    "date": "2026-11-21"
+  },
+  {
+    "id": "WEB-028",
+    "domaine": "Sites web",
+    "titre": "Envoyer le rapport Lighthouse JSON de la page contact",
+    "statut": "à faire",
+    "priorite": "cette semaine",
+    "compte": "Moi",
+    "brief": "Pour améliorer le score mobile de la page contact (89, objectif 90 et plus) : ouvre https://www.ducoinweb.fr/contact dans Chrome, F12, onglet Lighthouse, Device sur Mobile, lance l'analyse, puis menu à trois points, Save as JSON. Colle le contenu du fichier dans le chat ou envoie-le moi. [WEB-015]",
+    "etat": "Pas commencé.",
+    "date": "2026-11-21"
+  },
+  {
+    "id": "WEB-029",
+    "domaine": "Sites web",
+    "titre": "Site : meta descriptions courtes et images du lightbox trop lourdes",
+    "statut": "à faire",
+    "priorite": "cette semaine",
+    "compte": "Web",
+    "brief": "Relevé par le suivi SEO (WEB-013). 1) Meta description sous 100 caractères : mentions-legales (67) et realisations (85). 2) Images du lightbox de Réalisations au-dessus de 150 Ko : bar-desktop 153 Ko, bar-mobile 167 Ko, schoolsurf-desktop 239 Ko, schoolsurf-mobile 331 Ko. Allonger les deux meta, recompresser les quatre images en WebP sous 150 Ko sans changer leurs dimensions.",
+    "etat": "Pas commencé.",
     "date": "2026-11-21"
   }
 ]
