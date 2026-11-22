@@ -227,7 +227,7 @@
     "priorite": "plus tard",
     "compte": "Web",
     "brief": "Le plan (1.1, 1.1b) parle des \"5 pages\" du site. Le guide 09 et 01-appliquer-domaine.py en comptent 4 publiques (accueil, contact, mentions légales, confidentialité). Vérifier dans le dépôt du site ce que recouvre la 5e page (404 ?), puis corriger le texte du plan ou le script. Impacte aussi 03-suivi-seo.xlsx.",
-    "etat": "Fait : la 5e page du plan était la 404. Plan 1.1 et 1.1b et guide 09 corrigés (14 pages publiques + 404). 01-appliquer-domaine.py détecte maintenant toutes les pages au lieu de 4 et a été testé sur une copie du site (sitemap : mêmes 14 URLs).",
+    "etat": "Fait : la 5e page du plan était la 404. Plan 1.1 et 1.1b et guide Google Business Profile corrigés (14 pages publiques + 404). 01-appliquer-domaine.py détecte maintenant toutes les pages au lieu de 4 et a été testé sur une copie du site (sitemap : mêmes 14 URLs).",
     "date": "2026-11-21"
   },
   {
