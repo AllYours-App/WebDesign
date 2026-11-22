@@ -90,11 +90,11 @@
   {
     "id": "WEB-009",
     "domaine": "Sites web",
-    "titre": "Relecture juridique de 03, 06, 07 et 08",
+    "titre": "Relecture juridique : conformité, devis, CGV et contrat",
     "statut": "à faire",
     "priorite": "cette semaine",
     "compte": "Moi",
-    "brief": "À faire avant toute signature client et avant de lancer la prospection. Questions à poser listées dans 01-conformite-prospection, section 5. Points prioritaires : acompte conservé (clause pénale), L. 221-3 et contrat signé après appel, intérêt légitime pour les entrepreneurs individuels. Plan 4.5.",
+    "brief": "À faire avant toute signature client et avant de lancer la prospection. Dossier prêt à envoyer : Suivi/03 - Contrats/04-dossier-relecture-juridique.docx (partie 2, 14 points, priorité aux points 1, 5 et 9). Choisir la voie et le budget (partie 1). Plan 4.5.",
     "etat": "Pas envoyé à un juriste d'après le plan.",
     "date": "2026-11-20"
   },
@@ -168,11 +168,11 @@
     "id": "WEB-016",
     "domaine": "Sites web",
     "titre": "Vérifier le rappel meetergo et lire les conditions Formspree",
-    "statut": "à faire",
+    "statut": "fait",
     "priorite": "plus tard",
     "compte": "Moi",
     "brief": "meetergo : confirmer que le rappel avant l'appel est bien envoyé. Formspree : lire les conditions complètes, l'offre gratuite 50 envois par mois est présentée comme destinée aux tests. Plan 1.6b et 1.12.",
-    "etat": "Deux vérifications ouvertes.",
+    "etat": "Fait par Moi (coché dans Central le 2026-11-22).",
     "date": "2026-11-20"
   },
   {
@@ -190,11 +190,11 @@
     "id": "WEB-018",
     "domaine": "Sites web",
     "titre": "Noter l'échéance du domaine ducoinweb.fr et poser un rappel",
-    "statut": "à faire",
+    "statut": "fait",
     "priorite": "plus tard",
     "compte": "Moi",
     "brief": "Première année à 4,99 € HT, renouvellement à 7,79 € HT chez OVH (relevés de juillet 2026). Activer le renouvellement automatique et la double authentification.",
-    "etat": "Échéance exacte absente du repo.",
+    "etat": "Fait par Moi (coché dans Central le 2026-11-22).",
     "date": "2026-11-20"
   },
   {
@@ -204,8 +204,8 @@
     "statut": "fait",
     "priorite": "cette semaine",
     "compte": "Web",
-    "brief": "Le site, les emails de prospection (01) et le script d'appel (02) disent \"5 jours\". Les CGV (art. 6), le devis et le contrat disent 5 jours ouvrés. La note des CGV le signale déjà. Choisir jours ouvrés ou calendaires, puis aligner site, 01, 02, 06, 07 et 08.",
-    "etat": "Fait : délai de mise en ligne à 5 jours (sans \"ouvrés\") dans 06, 07 et 08, comme le site et la CGV en ligne. Réponses et validations du client restent à 5 jours ouvrés. 01 et 02 disaient déjà 5 jours.",
+    "brief": "Le site, les emails de prospection et le script d'appel disent \"5 jours\". Les CGV (art. 6), le devis et le contrat disent 5 jours ouvrés. La note des CGV le signale déjà. Choisir jours ouvrés ou calendaires, puis aligner site, emails, script d'appel, devis, CGV et contrat.",
+    "etat": "Fait : délai de mise en ligne à 5 jours (sans \"ouvrés\") dans le devis, les CGV et le contrat, comme le site et la CGV en ligne. Réponses et validations du client restent à 5 jours ouvrés. Les emails et le script d'appel disaient déjà 5 jours.",
     "date": "2026-11-21"
   },
   {
@@ -216,7 +216,7 @@
     "priorite": "cette semaine",
     "compte": "Web",
     "brief": "01 demande [Prénom] depuis une \"colonne Nom\" du tableau, mais 04 n'a aucune colonne pour le prénom ou le nom du contact (seulement Nom de l'entreprise). Les noms de colonnes cités dans 01 et 03 diffèrent aussi de ceux de 04 : \"Date 1er contact\" au lieu de \"Date du 1er contact\", \"Relance 1\" et \"Relance 2\" au lieu de \"Relance 1 envoyée le\" et \"Relance 2 envoyée le\". Ajouter une colonne contact à 04 (en gardant les formules) et aligner les noms dans 01 et 03.",
-    "etat": "Fait : colonne Prénom du dirigeant ajoutée en C dans 04 (formules, listes, alertes et synthèse décalées, testés sur données d'essai : résultats identiques). Noms de colonnes alignés dans 01, 02 et 03. Légende : prénom à effacer en cas d'opposition.",
+    "etat": "Fait : colonne Prénom du dirigeant ajoutée en C dans 08-suivi-prospects (formules, listes, alertes et synthèse décalées, testés sur données d'essai : résultats identiques). Noms de colonnes alignés dans les emails, le script d'appel et la conformité. Légende : prénom à effacer en cas d'opposition.",
     "date": "2026-11-21"
   },
   {
@@ -271,7 +271,7 @@
     "priorite": "cette semaine",
     "compte": "Web",
     "brief": "Le devis et les CGV (art. 2 et 4) disent que le client paie le domaine directement (option A). Le contrat laisse A et B ouvertes, et le plan 7.5 dit \"le client paie, ou tu paies et tu refactures\". Choisir A ou B (décision de Moi), puis garder une seule option dans le contrat et aligner devis, CGV et phase 7.5. L'option B est à faire valider par le juriste.",
-    "etat": "Fait : option A seule dans le contrat 08 (art. 6 et 7, notes de rédaction) ; phase 7.5 et ligne de procédure alignées dans 01-plan-de-lancement et 02-plan-de-lancement-client. Devis et CGV disaient déjà option A.",
+    "etat": "Fait : option A seule dans le contrat de prestation (art. 6 et 7, notes de rédaction) ; phase 7.5 et ligne de procédure alignées dans 01-plan-de-lancement et 02-plan-de-lancement-client. Devis et CGV disaient déjà option A.",
     "date": "2026-11-21"
   },
   {
@@ -336,7 +336,7 @@
     "statut": "fait",
     "priorite": "cette semaine",
     "compte": "Web",
-    "brief": "Préparer un dossier unique pour un juriste : les documents 03, 06, 07 et 08, les points précis à vérifier (acompte, délais, propriété du site, prospection par e-mail et RGPD, facturation électronique), les questions à poser, et comment trouver un juriste ou un service de relecture (coût estimé). But : débloquer WEB-009 et le démarrage de la prospection.",
+    "brief": "Préparer un dossier unique pour un juriste : la note de conformité, le devis, les CGV et le contrat, les points précis à vérifier (acompte, délais, propriété du site, prospection par e-mail et RGPD, facturation électronique), les questions à poser, et comment trouver un juriste ou un service de relecture (coût estimé). But : débloquer WEB-009 et le démarrage de la prospection.",
     "etat": "Fait le 2026-11-22 : Suivi/03 - Contrats/04-dossier-relecture-juridique.docx (7 pages). Partie 1 pour Moi : marche à suivre, voies (permanence gratuite du barreau de Bayonne, avocat, relecture en ligne, juriste indépendant), budget estimé 700 à 900 € HT à confirmer par devis. Partie 2 à envoyer : contexte, pièces, 14 points à vérifier, questions de la note 03. Prix et règles issus de sources publiques à confirmer. Reste à Moi : choisir la voie et envoyer (WEB-009).",
     "date": "2026-11-22"
   },
