@@ -355,22 +355,22 @@
     "id": "CEN-08",
     "domaine": "Sites web",
     "titre": "Processus de réalisation d'un site vitrine client, avec suivi du temps",
-    "statut": "en cours",
+    "statut": "fait",
     "priorite": "cette semaine",
     "compte": "Web",
     "brief": "Décrire les étapes de la signature à la livraison (brief client, contenus, maquette, développement avec Claude, relectures, mise en ligne, facture), avec un gabarit réutilisable et une feuille de suivi du temps par étape. But : mesurer si 10 h par site est tenable pour viser 1 client par semaine. Livrable dans le repo.",
-    "etat": "Démarré le 2026-11-22.",
+    "etat": "Fait le 2026-11-22 : Suivi/03 - Création du site/14-processus-site-client-et-suivi-temps.xlsx. 11 étapes de la signature à la facture avec livrable et critère de fin, gabarit de suivi du temps par étape (à copier par client), exemple fictif à supprimer, synthèse qui calcule si 10 h par site tient pour 1 site par semaine. Répartition des 10 h = hypothèse, à remplacer par les mesures du premier site. Avec 2 h par jour, 10 h par semaine tout compris : tenable seulement sans temps de prospection (voir CEN-22).",
     "date": "2026-11-22"
   },
   {
     "id": "CEN-09",
     "domaine": "Sites web",
     "titre": "Facturation électronique : vérifier Abby",
-    "statut": "à faire",
+    "statut": "en cours",
     "priorite": "cette semaine",
     "compte": "Web",
     "brief": "J'ai déjà un compte Abby (WEB-003 cochée). Vérifier sur les sources officielles que Abby est une plateforme agréée pour recevoir et émettre des factures électroniques, et lister ce qui reste à configurer.",
-    "etat": "",
+    "etat": "Démarré le 2026-11-22.",
     "date": "2026-11-22"
   },
   {
