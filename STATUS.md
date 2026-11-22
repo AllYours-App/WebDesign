@@ -1,7 +1,9 @@
 # Statut : compte Web
 
 Fait :
+- CEN-07 : dossier de relecture juridique 12-dossier-relecture-juridique.docx (14 points à vérifier, voies et budget estimé), prêt pour WEB-009 (2026-11-22).
 - mmwqtcy40 : outil local 11-generer-mails.py (brouillons .eml depuis ta liste locale, aucun envoi, sortie hors repo) ; modèles A, B, C à valider avec toi (2026-11-22).
+- WEB-004 : coordonnées personnelles retirées du repo public (placeholders dans 10 documents Suivi et appliquer-domaine.py), historique Git non purgé (2026-11-22).
 - WEB-002 : acompte aligné à 30 % / 70 % dans le devis 06 et le contrat 08 (2026-11-21).
 - WEB-012 : fiche Google créée, sitemap envoyé.
 - WEB-011 et WEB-027 : "sous réserve d'éligibilité" en ligne sur accueil, Tarifs, CGV, FAQ et Déroulement (confirmé 2026-11-21). WEB-001 : fichiers SEO présents dans mywebsite.
@@ -16,7 +18,7 @@ Fait :
 - Procédures : plan de lancement client à dupliquer (phases 6 à 8), mode d'emploi client (10), panorama des outils (phase 5).
 
 En cours :
-- CEN-07 : Dossier de relecture juridique : devis, CGV, contrat, politique de confidentialité (Démarré le 2026-11-22.).
+- mmwqb34sz : Demander l'ACRE et la CFE : marche à suivre (Démarré le 2026-11-22.).
 
 Bloqué :
 - WEB-015 : attend le rapport Lighthouse JSON de la page contact (WEB-028, à Moi).
@@ -34,10 +36,9 @@ Incohérences relevées (WEB-002, 010, 011, 019 à 025) :
 Prochaine étape :
 - WEB-014 : Contenu : une page par intention de recherche
 - WEB-029 : Site : meta descriptions courtes et images du lightbox trop lourdes
-- mmwqb34sz : Demander l'ACRE et la CFE : marche à suivre
 - CEN-08 : Processus de réalisation d'un site vitrine client, avec suivi du temps
 - CEN-09 : Facturation électronique : vérifier Abby
 - À Moi : WEB-009 (relecture juridique), WEB-008 (publier la section Prospection de la politique de confidentialité), WEB-028 (rapport Lighthouse), WEB-016, WEB-018.
 
 Mis à jour le : 2026-11-22
-Rythme : 16 tâches terminées sur la dernière fenêtre de 5 h
+Rythme : 18 tâches terminées sur la dernière fenêtre de 5 h
