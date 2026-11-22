@@ -21,7 +21,9 @@ Utilisation :
        python3 11-generer-mails.py ~/prospection-local/04-suivi-prospects.xlsx \
            --config ~/prospection-local/config-local.json
      Options : --sortie DOSSIER, --date AAAA-MM-JJ (pour simuler un autre jour),
-               --limite N (nombre maximum de mails).
+               --groupe NOM (ex. Restauration), --limite N (nombre maximum de mails).
+     Le fichier prospects-64-propre.xlsx (colonnes Nom, Email, État du site) est accepté tel quel.
+     Premier contact : seulement les lignes dont « État du site » vaut « Aucun site connu ».
   4. Ouvre le dossier de sortie, relis le rapport.txt, vérifie chaque brouillon,
      envoie, puis note les dates d'envoi dans le tableau de suivi (le script ne
      modifie jamais ton tableau).
@@ -107,6 +109,16 @@ MODELES = {
 NOM_PAR_DEFAUT = "Pierre-Antton Ducoin"
 MARQUE_PAR_DEFAUT = "P-A Ducoin, web design et développement"
 
+# Noms de colonnes acceptés en plus de ceux du tableau 04 (ex. prospects-64-propre.xlsx)
+ALIAS_COLONNES = {"Nom": "Nom de l'entreprise", "Email": "Email professionnel"}
+
+# Valeur de « État du site » pour laquelle le modèle A (« je n'ai pas trouvé de site ») est exact.
+# Les autres valeurs sont écartées du premier contact : vérifie à la main avant (règle 2 de 01).
+ETAT_SITE_OK = "Aucun site connu"
+
+# Libellé de la source dans la phrase d'information du mail
+SOURCES_AFFICHAGE = {"OpenStreetMap (Overpass)": "OpenStreetMap, base de données cartographique ouverte"}
+
 # Statuts pour lesquels on n'écrit plus (même logique que les formules du tableau 04)
 STATUTS_STOP = {"Opposition", "Pas intéressé", "Client", "Rendez-vous pris", "Numéro erroné"}
 
@@ -152,6 +164,14 @@ def jours_ouvres_apres(depart, n):
     return jour
 
 
+def normaliser(ligne):
+    """Ajoute les noms de colonnes standard quand le fichier utilise des alias."""
+    for alias, standard in ALIAS_COLONNES.items():
+        if alias in ligne and standard not in ligne:
+            ligne[standard] = ligne[alias]
+    return ligne
+
+
 def texte(valeur):
     return "" if valeur is None else str(valeur).strip()
 
@@ -165,7 +185,7 @@ def lire_xlsx(chemin):
     feuille = classeur["Prospects"] if "Prospects" in classeur.sheetnames else classeur.active
     lignes = list(feuille.iter_rows(values_only=True))
     entetes = [texte(c) for c in lignes[0]]
-    prospects = [dict(zip(entetes, ligne)) for ligne in lignes[1:]]
+    prospects = [normaliser(dict(zip(entetes, ligne))) for ligne in lignes[1:]]
     opposes = set()
     if "Opposition" in classeur.sheetnames:
         for ligne in list(classeur["Opposition"].iter_rows(values_only=True))[1:]:
@@ -179,7 +199,7 @@ def lire_csv(chemin):
         echantillon = f.read(2048)
         f.seek(0)
         dialecte = csv.Sniffer().sniff(echantillon, delimiters=",;\t")
-        return list(csv.DictReader(f, dialect=dialecte)), set()
+        return [normaliser(dict(l)) for l in csv.DictReader(f, dialect=dialecte)], set()
 
 
 # ---------------------------------------------------------------------------
@@ -193,6 +213,9 @@ def choisir_modele(p, aujourdhui):
     relance1 = en_date(p.get("Relance 1 envoyée le"))
     relance2 = en_date(p.get("Relance 2 envoyée le"))
     if premier is None:
+        etat = texte(p.get("État du site"))
+        if etat and etat != ETAT_SITE_OK:
+            return None, "État du site : « %s » (le modèle A suppose qu'il n'y a pas de site)" % etat
         return "A", None
     if texte(p.get("Canal du 1er contact")) not in ("", "Email"):
         return None, "1er contact par un autre canal que l'e-mail"
@@ -244,9 +267,9 @@ def construire(p, modele, cfg):
     valeurs = {
         "salut": "Bonjour %s," % prenom if prenom else "Bonjour,",
         "entreprise": texte(p.get("Nom de l'entreprise")),
-        "activite": texte(p.get("Activité")),
+        "activite": texte(p.get("Activité")).lower(),
         "ville": texte(p.get("Ville")),
-        "source": texte(p.get("Source de la donnée")),
+        "source": SOURCES_AFFICHAGE.get(texte(p.get("Source de la donnée")), texte(p.get("Source de la donnée"))),
         "date_premier_contact": premier.strftime("%d/%m/%Y") if premier else "",
         "nom": cfg.get("nom", NOM_PAR_DEFAUT),
         "marque": cfg.get("marque", MARQUE_PAR_DEFAUT),
@@ -275,6 +298,7 @@ def main():
     ap.add_argument("--sortie", default=str(Path.home() / "prospection-local" / "mails"),
                     help="dossier de sortie (hors dépôt Git)")
     ap.add_argument("--date", help="AAAA-MM-JJ : simule un autre jour (par défaut aujourd'hui)")
+    ap.add_argument("--groupe", help="ne traiter que ce groupe (colonne Groupe), ex. Restauration")
     ap.add_argument("--limite", type=int, help="nombre maximum de mails à générer")
     a = ap.parse_args()
 
@@ -300,6 +324,8 @@ def main():
         if not texte(p.get("Nom de l'entreprise")):
             continue
         nom = texte(p.get("Nom de l'entreprise"))
+        if a.groupe and texte(p.get("Groupe")).lower() != a.groupe.lower():
+            continue
         modele, raison = choisir_modele(p, aujourdhui)
         if modele is None:
             ecartes.append((i, nom, raison))
