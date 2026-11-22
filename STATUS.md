@@ -1,6 +1,7 @@
 # Statut : compte Web
 
 Fait :
+- WEB-029 : meta descriptions de mentions-legales et realisations allongées, 4 images du lightbox recompressées sous 150 Ko (repo mywebsite, 2026-11-22).
 - CEN-09 : Abby figure sur la liste officielle des plateformes agréées (immatriculation du 2026-01-29), statut définitif à confirmer ; marche à suivre dans 15-facturation-electronique-abby.docx (2026-11-22).
 - CEN-08 : processus de réalisation d'un site en 11 étapes, gabarit de suivi du temps et synthèse (14-processus-site-client-et-suivi-temps.xlsx, 2026-11-22).
 - mmwqb34sz : marche à suivre ACRE et CFE (13-acre-et-cfe-marche-a-suivre.docx), démarches à Moi dans WEB-030 (2026-11-22).
@@ -21,7 +22,7 @@ Fait :
 - Procédures : plan de lancement client à dupliquer (phases 6 à 8), mode d'emploi client (10), panorama des outils (phase 5).
 
 En cours :
-- WEB-029 : Site : meta descriptions courtes et images du lightbox trop lourdes (Démarré le 2026-11-22.).
+- Rien.
 
 Bloqué :
 - WEB-015 : attend le rapport Lighthouse JSON de la page contact (WEB-028, à Moi).
@@ -41,4 +42,4 @@ Prochaine étape :
 - À Moi : WEB-009 (relecture juridique), WEB-008 (publier la section Prospection de la politique de confidentialité), WEB-028 (rapport Lighthouse), WEB-016, WEB-018.
 
 Mis à jour le : 2026-11-22
-Rythme : 21 tâches terminées sur la dernière fenêtre de 5 h
+Rythme : 22 tâches terminées sur la dernière fenêtre de 5 h
