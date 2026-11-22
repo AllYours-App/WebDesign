@@ -28,7 +28,7 @@ En cours :
 
 Bloqué :
 - WEB-015 : attend le rapport Lighthouse JSON de la page contact (WEB-028, à Moi).
-- La prospection attend la relecture juridique WEB-009 (à Moi) : aucun envoi avant.
+- Rien ne bloque la prospection : relecture juridique WEB-009 reportée par décision de Moi (2026-11-22), à reprendre si besoin.
 
 Incohérences relevées (WEB-002, 010, 011, 019 à 025) :
 - Acompte : réglé (30 % / 70 %).
