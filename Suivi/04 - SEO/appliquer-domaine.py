@@ -86,7 +86,7 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument('domaine', help='adresse définitive, par exemple https://mondomaine.fr')
     ap.add_argument('--nom', default='P-A Ducoin')
-    ap.add_argument('--tel', default='+33771717229')
+    ap.add_argument('--tel', default='+33600000000')
     ap.add_argument('--email', default='contact@ducoinweb.fr')
     ap.add_argument('--description', default='Création de sites vitrines pour professionnels.')
     ap.add_argument('--sans-donnees-structurees', action='store_true')
