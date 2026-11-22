@@ -311,11 +311,11 @@
     "id": "WEB-029",
     "domaine": "Sites web",
     "titre": "Site : meta descriptions courtes et images du lightbox trop lourdes",
-    "statut": "en cours",
+    "statut": "fait",
     "priorite": "cette semaine",
     "compte": "Web",
     "brief": "Relevé par le suivi SEO (WEB-013). 1) Meta description sous 100 caractères : mentions-legales (67) et realisations (85). 2) Images du lightbox de Réalisations au-dessus de 150 Ko : bar-desktop 153 Ko, bar-mobile 167 Ko, schoolsurf-desktop 239 Ko, schoolsurf-mobile 331 Ko. Allonger les deux meta, recompresser les quatre images en WebP sous 150 Ko sans changer leurs dimensions.",
-    "etat": "Démarré le 2026-11-22.",
+    "etat": "Fait le 2026-11-22 dans le repo mywebsite : meta description de mentions-legales (67 à 141 caractères) et de realisations (85 à 149), og:description alignée ; 4 images du lightbox recompressées en WebP, mêmes dimensions, entre 143 et 145 Ko (bar 144 et 145 Ko, schoolsurf 143 et 144 Ko). schoolsurf-mobile à qualité 17, texte lisible mais un peu adouci : à regarder sur la page. Le suivi-seo.xlsx cite encore les anciennes longueurs de meta et les poids d'images : à mettre à jour. Contrôle Lighthouse après déploiement à faire.",
     "date": "2026-11-21"
   },
   {
