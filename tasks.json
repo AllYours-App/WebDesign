@@ -146,11 +146,11 @@
     "id": "WEB-014",
     "domaine": "Sites web",
     "titre": "Contenu : une page par intention de recherche",
-    "statut": "à faire",
+    "statut": "fait",
     "priorite": "plus tard",
     "compte": "Web",
     "brief": "Titres et textes par intention de recherche. Le site compte 14 pages publiques (accueil, Tarifs, Réalisations, Déroulement, FAQ, À propos, Contact, 4 guides, mentions légales, confidentialité, CGV). Plan 3.4.",
-    "etat": "Pas commencé.",
+    "etat": "Fait le 2026-11-22 : Suivi/05 - SEO/04-contenu-par-intention.xlsx (une page, une intention, titre avant et après). Dans mywebsite : titre, H1 ou H2 précisés sur 5 pages (a-propos, contact, faq, realisations, tarifs). Les autres pages répondaient déjà à une intention nette. Intentions déduites, non mesurées : à confronter à Search Console après 4 à 6 semaines. Page Réalisations courte (111 mots). Propositions de pages par secteur dans l'onglet « Pages à créer » : décision de Moi. Le suivi-seo.xlsx cite d'anciens titres : à vérifier.",
     "date": "2026-11-20"
   },
   {
