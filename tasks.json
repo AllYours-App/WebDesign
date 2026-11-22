@@ -372,5 +372,16 @@
     "brief": "J'ai déjà un compte Abby (WEB-003 cochée). Vérifier sur les sources officielles que Abby est une plateforme agréée pour recevoir et émettre des factures électroniques, et lister ce qui reste à configurer.",
     "etat": "",
     "date": "2026-11-22"
+  },
+  {
+    "id": "WEB-030",
+    "domaine": "Sites web",
+    "titre": "Faire les démarches ACRE et CFE",
+    "statut": "à faire",
+    "priorite": "cette semaine",
+    "compte": "Moi",
+    "brief": "Suivre Suivi/Autre/13-acre-et-cfe-marche-a-suivre.docx. 1) Relever ta date de début d'activité. 2) Si tu es éligible, demander l'ACRE à l'Urssaf dans les 60 jours après cette date. 3) Déposer la déclaration initiale de CFE (1447-C-SD) avant le 31 décembre 2026 si l'activité a démarré en 2026.",
+    "etat": "Pas commencé. Dates limites : 60 jours après le début d'activité (ACRE), 2026-12-31 (CFE).",
+    "date": "2026-11-22"
   }
 ]
