@@ -1,6 +1,7 @@
 # Statut : compte Web
 
 Fait :
+- Repo WebDesign réorganisé dans l'ordre de travail (dossiers Suivi/00 à 06, fichiers numérotés dans chaque dossier), renvois corrigés dans les documents, scripts, tasks.json et STATUS.md (2026-11-22).
 - WEB-029 : meta descriptions de mentions-legales et realisations allongées, 4 images du lightbox recompressées sous 150 Ko (repo mywebsite, 2026-11-22).
 - CEN-09 : Abby figure sur la liste officielle des plateformes agréées (immatriculation du 2026-01-29), statut définitif à confirmer ; marche à suivre dans 02-facturation-electronique-abby.docx (2026-11-22).
 - CEN-08 : processus de réalisation d'un site en 11 étapes, gabarit de suivi du temps et synthèse (01-processus-site-client-et-suivi-temps.xlsx, 2026-11-22).
