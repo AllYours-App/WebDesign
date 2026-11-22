@@ -35,8 +35,8 @@ Incohérences relevées (WEB-002, 010, 011, 019 à 025) :
 - Délai : réglé (5 jours pour la mise en ligne, réponses client sous 5 jours ouvrés), WEB-019.
 - Fiche Google : réglé ("sous réserve d'éligibilité" partout).
 - Frais de tiers : réglé (option A seule), WEB-025.
-- Emails 01 : variable [Prénom] sans colonne correspondante dans le tableau 04.
-- Mode d'emploi client : renvoie à l'article 12 au lieu du 11.
+- Emails : variable [Prénom] alignée avec le tableau de suivi, réglé (WEB-020).
+- Mode d'emploi client : renvoi à l'article 11 corrigé, réglé (WEB-010).
 - Plan : toutes les incohérences relevées sont réglées (WEB-021 à 024).
 
 Prochaine étape :
