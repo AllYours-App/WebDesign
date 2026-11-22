@@ -23,7 +23,8 @@ Utilisation :
      Options : --sortie DOSSIER, --date AAAA-MM-JJ (pour simuler un autre jour),
                --groupe NOM (ex. Restauration), --limite N (nombre maximum de mails).
      Le fichier prospects-64-propre.xlsx (colonnes Nom, Email, État du site) est accepté tel quel.
-     Premier contact : seulement les lignes dont « État du site » vaut « Aucun site connu ».
+     Premier contact : seulement les lignes dont « État du site » vaut « Aucun site connu »
+     ET dont la vérification (16-verifier-sites.py, option --verif) dit « Aucun site apparent ».
   4. Ouvre le dossier de sortie, relis le rapport.txt, vérifie chaque brouillon,
      envoie, puis note les dates d'envoi dans le tableau de suivi (le script ne
      modifie jamais ton tableau).
@@ -298,6 +299,9 @@ def main():
     ap.add_argument("--sortie", default=str(Path.home() / "prospection-local" / "mails"),
                     help="dossier de sortie (hors dépôt Git)")
     ap.add_argument("--date", help="AAAA-MM-JJ : simule un autre jour (par défaut aujourd'hui)")
+    ap.add_argument("--verif", help="verification-sites.csv produit par 16-verifier-sites.py")
+    ap.add_argument("--sans-verification", action="store_true",
+                    help="autorise le modèle A sans vérification du site (déconseillé)")
     ap.add_argument("--groupe", help="ne traiter que ce groupe (colonne Groupe), ex. Restauration")
     ap.add_argument("--limite", type=int, help="nombre maximum de mails à générer")
     a = ap.parse_args()
@@ -319,6 +323,11 @@ def main():
     chemin = Path(a.liste).expanduser()
     prospects, opposes = lire_xlsx(chemin) if chemin.suffix.lower() == ".xlsx" else lire_csv(chemin)
 
+    verdicts = {}
+    if a.verif:
+        with open(Path(a.verif).expanduser(), newline="", encoding="utf-8") as f:
+            verdicts = {int(r["ligne"]): r for r in csv.DictReader(f)}
+
     generes, ecartes = [], []
     for i, p in enumerate(prospects, start=2):  # ligne 2 = 1er prospect, comme dans Excel
         if not texte(p.get("Nom de l'entreprise")):
@@ -330,6 +339,14 @@ def main():
         if modele is None:
             ecartes.append((i, nom, raison))
             continue
+        if modele == "A" and not a.sans_verification:
+            v = verdicts.get(i)
+            if v is None:
+                ecartes.append((i, nom, "site non vérifié : lance 16-verifier-sites.py puis --verif"))
+                continue
+            if v["verdict"] != "Aucun site apparent":
+                ecartes.append((i, nom, "vérification du site : %s %s" % (v["verdict"], v.get("url", ""))))
+                continue
         raison = verifier(p, opposes)
         if raison:
             ecartes.append((i, nom, raison))
