@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-16-verifier-sites.py : vérifie qu'une entreprise n'a PAS de site avant de lui écrire.
+04-verifier-sites.py : vérifie qu'une entreprise n'a PAS de site avant de lui écrire.
 
 Pourquoi : la colonne « État du site » du fichier prospects vient d'OpenStreetMap, qui
 rate beaucoup de sites existants. Ce script refait la vérification que tu fais à la main
@@ -18,7 +18,7 @@ Deux contrôles, dans cet ordre :
 
 Verdicts écrits dans verification-sites.csv :
   - « Aucun site apparent » : aucun des deux contrôles n'a trouvé de site. Seul verdict
-    que 11-generer-mails.py accepte pour le premier contact.
+    que 06-generer-mails.py accepte pour le premier contact.
   - « Site trouvé »         : url dans la colonne suivante. On n'écrit pas à cette entreprise.
   - « À vérifier »          : recherche en erreur ou sans résultat. Fais-le à la main.
 Même après « Aucun site apparent », garde un coup d'œil humain sur un échantillon.
@@ -29,17 +29,17 @@ Mise en place :
      les conditions sur le site au moment de l'inscription).
   2. Ajoute dans ton config-local.json (hors repo) : "brave_api_key": "..."
   3. Lance :
-       python3 16-verifier-sites.py ~/prospection-local/prospects-64-propre.xlsx \
+       python3 04-verifier-sites.py ~/prospection-local/03-prospects-64-propre.xlsx \
            --config ~/prospection-local/config-local.json
      Options : --groupe NOM, --max-requetes N (défaut 900), --inclure-sans-email,
                --sans-recherche (seulement le contrôle du domaine, sans clé),
                --sortie DOSSIER.
-  4. Relance 11-generer-mails.py avec  --verif <dossier de sortie>/verification-sites.csv
+  4. Relance 06-generer-mails.py avec  --verif <dossier de sortie>/verification-sites.csv
 
 Les réponses de la recherche sont gardées dans cache-recherches.json (même dossier) :
 relancer le script ne dépense pas de requêtes déjà faites.
 
-Garde 11-generer-mails.py dans le même dossier que ce script (il en réutilise les lecteurs).
+Garde 06-generer-mails.py dans le même dossier que ce script (il en réutilise les lecteurs).
 
 Dépendance : openpyxl pour un .xlsx (pip install openpyxl). Le reste est la bibliothèque
 standard de Python.
@@ -58,10 +58,10 @@ import urllib.parse
 import urllib.request
 from pathlib import Path
 
-# Importe les lecteurs de 11-generer-mails.py (même dossier)
+# Importe les lecteurs de 06-generer-mails.py (même dossier)
 import importlib.util
 
-_spec = importlib.util.spec_from_file_location("gen", Path(__file__).with_name("11-generer-mails.py"))
+_spec = importlib.util.spec_from_file_location("gen", Path(__file__).with_name("06-generer-mails.py"))
 gen = importlib.util.module_from_spec(_spec)
 _spec.loader.exec_module(gen)
 

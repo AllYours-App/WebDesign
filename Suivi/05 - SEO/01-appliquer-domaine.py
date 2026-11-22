@@ -4,10 +4,10 @@
 Étapes 1.7 et 3.2 : applique l'adresse définitive du site en une commande.
 
 À lancer à la racine du dépôt, après l'achat du domaine (1.10) :
-    python3 appliquer-domaine.py https://mondomaine.fr
+    python3 01-appliquer-domaine.py https://mondomaine.fr
 
 Pour le site d'un client, ajoute ses coordonnées (sinon ce sont les tiennes qui seraient publiées) :
-    python3 appliquer-domaine.py https://domaine-client.fr --nom "Nom du client" --tel +33600000000 --email contact@domaine-client.fr --description "Plombier à Bayonne."
+    python3 01-appliquer-domaine.py https://domaine-client.fr --nom "Nom du client" --tel +33600000000 --email contact@domaine-client.fr --description "Plombier à Bayonne."
 Ajoute --sans-donnees-structurees pour ne pas insérer ce bloc. Sans cette option, le bloc existant de index.html est
 remplacé par une version simple : à utiliser sur le site d'un client, pas pour relancer le script sur ton propre site.
 

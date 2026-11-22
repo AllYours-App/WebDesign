@@ -2,23 +2,23 @@
 
 Fait :
 - WEB-029 : meta descriptions de mentions-legales et realisations allongées, 4 images du lightbox recompressées sous 150 Ko (repo mywebsite, 2026-11-22).
-- CEN-09 : Abby figure sur la liste officielle des plateformes agréées (immatriculation du 2026-01-29), statut définitif à confirmer ; marche à suivre dans 15-facturation-electronique-abby.docx (2026-11-22).
-- CEN-08 : processus de réalisation d'un site en 11 étapes, gabarit de suivi du temps et synthèse (14-processus-site-client-et-suivi-temps.xlsx, 2026-11-22).
-- mmwqb34sz : marche à suivre ACRE et CFE (13-acre-et-cfe-marche-a-suivre.docx), démarches à Moi dans WEB-030 (2026-11-22).
-- CEN-07 : dossier de relecture juridique 12-dossier-relecture-juridique.docx (14 points à vérifier, voies et budget estimé), prêt pour WEB-009 (2026-11-22).
-- mmwqtcy40 : outil local 11-generer-mails.py (brouillons .eml depuis ta liste locale, aucun envoi, sortie hors repo) ; modèles A, B, C à valider avec toi (2026-11-22).
-- WEB-004 : coordonnées personnelles retirées du repo public (placeholders dans 10 documents Suivi et appliquer-domaine.py), historique Git non purgé (2026-11-22).
+- CEN-09 : Abby figure sur la liste officielle des plateformes agréées (immatriculation du 2026-01-29), statut définitif à confirmer ; marche à suivre dans 02-facturation-electronique-abby.docx (2026-11-22).
+- CEN-08 : processus de réalisation d'un site en 11 étapes, gabarit de suivi du temps et synthèse (01-processus-site-client-et-suivi-temps.xlsx, 2026-11-22).
+- mmwqb34sz : marche à suivre ACRE et CFE (01-acre-et-cfe-marche-a-suivre.docx), démarches à Moi dans WEB-030 (2026-11-22).
+- CEN-07 : dossier de relecture juridique 04-dossier-relecture-juridique.docx (14 points à vérifier, voies et budget estimé), prêt pour WEB-009 (2026-11-22).
+- mmwqtcy40 : outil local 06-generer-mails.py (brouillons .eml depuis ta liste locale, aucun envoi, sortie hors repo) ; modèles A, B, C à valider avec toi (2026-11-22).
+- WEB-004 : coordonnées personnelles retirées du repo public (placeholders dans 10 documents Suivi et 01-appliquer-domaine.py), historique Git non purgé (2026-11-22).
 - WEB-002 : acompte aligné à 30 % / 70 % dans le devis 06 et le contrat 08 (2026-11-21).
 - WEB-012 : fiche Google créée, sitemap envoyé.
 - WEB-011 et WEB-027 : "sous réserve d'éligibilité" en ligne sur accueil, Tarifs, CGV, FAQ et Déroulement (confirmé 2026-11-21). WEB-001 : fichiers SEO présents dans mywebsite.
-- WEB-021 : plan, guide 09 et appliquer-domaine.py alignés sur les 14 pages publiques du site (+ la 404).
+- WEB-021 : plan, guide 09 et 01-appliquer-domaine.py alignés sur les 14 pages publiques du site (+ la 404).
 - WEB-013 : suivi SEO rempli (14 pages, 26 tâches vérifiées, Base 23 sur 41).
 - WEB-017 : prix OVHcloud et Figma confirmés, limites Umami précisées dans le panorama des outils. Les autres prix restent non revérifiés.
 - Site vitrine en ligne sur ducoinweb.fr (domaine OVH, DNS Cloudflare, Worker, HTTPS testé). Formulaire Formspree testé, rendez-vous meetergo intégré, mentions légales et confidentialité renseignées, aucun cookie.
 - Tests : accueil à 100 partout, contact à 89 en performance et 100 pour le reste.
 - Prospection : 3 emails + 2 réponses types (01), script d'appel (02), note de conformité (03), tableau de suivi structuré (04, vide), script Sirene (05).
 - Contrats : devis type (06), CGV (07), contrat de prestation avec cession de droits et article L. 221-3 (08). Tous à l'état de projet, pas encore relus par un juriste.
-- SEO : guide Google Business Profile / Search Console (09), script appliquer-domaine.py, tableau suivi-seo.xlsx (non rempli).
+- SEO : guide Google Business Profile / Search Console (09), script 01-appliquer-domaine.py, tableau 03-suivi-seo.xlsx (non rempli).
 - Procédures : plan de lancement client à dupliquer (phases 6 à 8), mode d'emploi client (10), panorama des outils (phase 5).
 
 En cours :

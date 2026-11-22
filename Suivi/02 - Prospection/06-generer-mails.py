@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-11-generer-mails.py : prépare les mails de prospection à partir de ta liste LOCALE.
+06-generer-mails.py : prépare les mails de prospection à partir de ta liste LOCALE.
 
 Ce script NE ENVOIE RIEN. Il écrit un brouillon .eml par prospect (s'ouvre dans
 Outlook, Thunderbird, Apple Mail) et un rapport. Tu relis, puis tu envoies à la main.
@@ -15,16 +15,16 @@ Règles qui protègent le repo public :
 Utilisation :
   1. Crée config-local.json hors du repo, par exemple dans ~/prospection-local/ :
        {"email_pro": "...", "telephone": "...", "siret": "...", "site": "ducoinweb.fr"}
-  2. Garde ta liste en local : le tableau 04-suivi-prospects.xlsx (onglet Prospects)
+  2. Garde ta liste en local : le tableau 08-suivi-prospects.xlsx (onglet Prospects)
      ou un CSV avec les mêmes en-têtes de colonnes.
   3. Lance :
-       python3 11-generer-mails.py ~/prospection-local/04-suivi-prospects.xlsx \
+       python3 06-generer-mails.py ~/prospection-local/08-suivi-prospects.xlsx \
            --config ~/prospection-local/config-local.json
      Options : --sortie DOSSIER, --date AAAA-MM-JJ (pour simuler un autre jour),
                --groupe NOM (ex. Restauration), --limite N (nombre maximum de mails).
-     Le fichier prospects-64-propre.xlsx (colonnes Nom, Email, État du site) est accepté tel quel.
+     Le fichier 03-prospects-64-propre.xlsx (colonnes Nom, Email, État du site) est accepté tel quel.
      Premier contact : seulement les lignes dont « État du site » vaut « Aucun site connu »
-     ET dont la vérification (16-verifier-sites.py, option --verif) dit « Aucun site apparent ».
+     ET dont la vérification (04-verifier-sites.py, option --verif) dit « Aucun site apparent ».
   4. Ouvre le dossier de sortie, relis le rapport.txt, vérifie chaque brouillon,
      envoie, puis note les dates d'envoi dans le tableau de suivi (le script ne
      modifie jamais ton tableau).
@@ -42,7 +42,7 @@ from email.message import EmailMessage
 from pathlib import Path
 
 # ---------------------------------------------------------------------------
-# MODÈLES : brouillon repris de 01-emails-prospection.docx, À VALIDER AVEC TOI.
+# MODÈLES : brouillon repris de 05-emails-prospection.docx, À VALIDER AVEC TOI.
 # Les mots entre accolades sont remplacés par le script. Pour changer un texte,
 # modifie seulement les chaînes ci-dessous.
 # Ne modifie pas le paragraphe MENTION : il contient l'information exigée par le RGPD.
@@ -110,7 +110,7 @@ MODELES = {
 NOM_PAR_DEFAUT = "Pierre-Antton Ducoin"
 MARQUE_PAR_DEFAUT = "P-A Ducoin, web design et développement"
 
-# Noms de colonnes acceptés en plus de ceux du tableau 04 (ex. prospects-64-propre.xlsx)
+# Noms de colonnes acceptés en plus de ceux du tableau 04 (ex. 03-prospects-64-propre.xlsx)
 ALIAS_COLONNES = {"Nom": "Nom de l'entreprise", "Email": "Email professionnel"}
 
 # Valeur de « État du site » pour laquelle le modèle A (« je n'ai pas trouvé de site ») est exact.
@@ -124,7 +124,7 @@ SOURCES_AFFICHAGE = {"OpenStreetMap (Overpass)": "OpenStreetMap, base de donnée
 STATUTS_STOP = {"Opposition", "Pas intéressé", "Client", "Rendez-vous pris", "Numéro erroné"}
 
 # Adresses de messagerie grand public : à vérifier à la main (règle : adresses
-# professionnelles uniquement, voir 03-conformite-prospection).
+# professionnelles uniquement, voir 01-conformite-prospection).
 DOMAINES_GRAND_PUBLIC = {
     "gmail.com", "yahoo.fr", "yahoo.com", "hotmail.com", "hotmail.fr", "outlook.com",
     "outlook.fr", "live.fr", "live.com", "orange.fr", "wanadoo.fr", "free.fr", "sfr.fr",
@@ -299,7 +299,7 @@ def main():
     ap.add_argument("--sortie", default=str(Path.home() / "prospection-local" / "mails"),
                     help="dossier de sortie (hors dépôt Git)")
     ap.add_argument("--date", help="AAAA-MM-JJ : simule un autre jour (par défaut aujourd'hui)")
-    ap.add_argument("--verif", help="verification-sites.csv produit par 16-verifier-sites.py")
+    ap.add_argument("--verif", help="verification-sites.csv produit par 04-verifier-sites.py")
     ap.add_argument("--sans-verification", action="store_true",
                     help="autorise le modèle A sans vérification du site (déconseillé)")
     ap.add_argument("--groupe", help="ne traiter que ce groupe (colonne Groupe), ex. Restauration")
@@ -342,7 +342,7 @@ def main():
         if modele == "A" and not a.sans_verification:
             v = verdicts.get(i)
             if v is None:
-                ecartes.append((i, nom, "site non vérifié : lance 16-verifier-sites.py puis --verif"))
+                ecartes.append((i, nom, "site non vérifié : lance 04-verifier-sites.py puis --verif"))
                 continue
             if v["verdict"] != "Aucun site apparent":
                 ecartes.append((i, nom, "vérification du site : %s %s" % (v["verdict"], v.get("url", ""))))

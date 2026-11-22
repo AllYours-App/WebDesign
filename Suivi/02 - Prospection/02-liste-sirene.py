@@ -8,8 +8,8 @@ Les colonnes « Site actuel », « Téléphone » et « Email professionnel » r
 Sirene ne les contient pas, tu les complètes à la main (Google Maps, fiche publique).
 
 Exemples :
-  python3 05-liste-sirene.py --naf 43.22A --departement 64 --max 200
-  python3 05-liste-sirene.py --naf 56.10A --code-postal 64200 --sortie restaurants-biarritz.csv
+  python3 02-liste-sirene.py --naf 43.22A --departement 64 --max 200
+  python3 02-liste-sirene.py --naf 56.10A --code-postal 64200 --sortie restaurants-biarritz.csv
 
 Le code NAF s'écrit avec le point (43.22A). Aucune dépendance à installer.
 Limite de l'API : 10 000 résultats par recherche au maximum. Resserre par département
