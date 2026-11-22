@@ -1,13 +1,13 @@
 # Statut : compte Web
 
 Fait :
+- mmwqtcy40 : outil local 11-generer-mails.py (brouillons .eml depuis ta liste locale, aucun envoi, sortie hors repo) ; modèles A, B, C à valider avec toi (2026-11-22).
 - WEB-002 : acompte aligné à 30 % / 70 % dans le devis 06 et le contrat 08 (2026-11-21).
 - WEB-012 : fiche Google créée, sitemap envoyé.
 - WEB-011 et WEB-027 : "sous réserve d'éligibilité" en ligne sur accueil, Tarifs, CGV, FAQ et Déroulement (confirmé 2026-11-21). WEB-001 : fichiers SEO présents dans mywebsite.
 - WEB-021 : plan, guide 09 et appliquer-domaine.py alignés sur les 14 pages publiques du site (+ la 404).
 - WEB-013 : suivi SEO rempli (14 pages, 26 tâches vérifiées, Base 23 sur 41).
 - WEB-017 : prix OVHcloud et Figma confirmés, limites Umami précisées dans le panorama des outils. Les autres prix restent non revérifiés.
-- Repo relu le 2026-11-21 : STATUS, tasks.json, 15 fichiers du dossier Suivi (6 sous-dossiers), pas de README. data/done.json absent de Central (data/ ne contient que inbox.json) : aucune tâche à Moi marquée faite. Les statuts ci-dessous viennent du plan de lancement mis à jour le 2026-10-14 : tout ce qui s'est passé depuis n'est pas dans le repo.
 - Site vitrine en ligne sur ducoinweb.fr (domaine OVH, DNS Cloudflare, Worker, HTTPS testé). Formulaire Formspree testé, rendez-vous meetergo intégré, mentions légales et confidentialité renseignées, aucun cookie.
 - Tests : accueil à 100 partout, contact à 89 en performance et 100 pour le reste.
 - Prospection : 3 emails + 2 réponses types (01), script d'appel (02), note de conformité (03), tableau de suivi structuré (04, vide), script Sirene (05).
@@ -16,12 +16,11 @@ Fait :
 - Procédures : plan de lancement client à dupliquer (phases 6 à 8), mode d'emploi client (10), panorama des outils (phase 5).
 
 En cours :
-- Choix de la cible de prospection (codes NAF) et constitution de la liste. Le script 05 n'a jamais tourné sur l'API réelle.
-- Tableau de suivi prospects : 0 ligne saisie, 0 opposition.
-- Panorama des outils : prix à confirmer sur les pages des fournisseurs.
+- CEN-07 : Dossier de relecture juridique : devis, CGV, contrat, politique de confidentialité (Démarré le 2026-11-22.).
 
 Bloqué :
 - WEB-015 : attend le rapport Lighthouse JSON de la page contact (WEB-028, à Moi).
+- La prospection attend la relecture juridique WEB-009 (à Moi) : aucun envoi avant.
 
 Incohérences relevées (WEB-002, 010, 011, 019 à 025) :
 - Acompte : réglé (30 % / 70 %).
@@ -33,12 +32,12 @@ Incohérences relevées (WEB-002, 010, 011, 019 à 025) :
 - Plan : toutes les incohérences relevées sont réglées (WEB-021 à 024).
 
 Prochaine étape :
-- Alignement des documents terminé (WEB-002, 010, 019 à 025) et suivi SEO rempli (WEB-013).
-- File restante, à ta demande je m'arrête ici : WEB-029 (meta descriptions courtes, images du lightbox trop lourdes), WEB-014 (contenus par intention de recherche), WEB-015 (bloqué : rapport Lighthouse, WEB-028 à Moi).
-- Choisir les codes NAF, lancer 05-liste-sirene.py.
-- Mettre en ligne la section Prospection de la politique de confidentialité avant tout premier email.
-- Envoyer 03, 06, 07 et 08 à un juriste avant toute signature ou prospection.
-- Choisir une plateforme de facturation électronique (réception obligatoire depuis le 2026-09-01).
+- WEB-014 : Contenu : une page par intention de recherche
+- WEB-029 : Site : meta descriptions courtes et images du lightbox trop lourdes
+- mmwqb34sz : Demander l'ACRE et la CFE : marche à suivre
+- CEN-08 : Processus de réalisation d'un site vitrine client, avec suivi du temps
+- CEN-09 : Facturation électronique : vérifier Abby
+- À Moi : WEB-009 (relecture juridique), WEB-008 (publier la section Prospection de la politique de confidentialité), WEB-028 (rapport Lighthouse), WEB-016, WEB-018.
 
-Mis à jour le : 2026-11-21
+Mis à jour le : 2026-11-22
 Rythme : 16 tâches terminées sur la dernière fenêtre de 5 h
