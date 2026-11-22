@@ -311,11 +311,11 @@
     "id": "WEB-029",
     "domaine": "Sites web",
     "titre": "Site : meta descriptions courtes et images du lightbox trop lourdes",
-    "statut": "à faire",
+    "statut": "en cours",
     "priorite": "cette semaine",
     "compte": "Web",
     "brief": "Relevé par le suivi SEO (WEB-013). 1) Meta description sous 100 caractères : mentions-legales (67) et realisations (85). 2) Images du lightbox de Réalisations au-dessus de 150 Ko : bar-desktop 153 Ko, bar-mobile 167 Ko, schoolsurf-desktop 239 Ko, schoolsurf-mobile 331 Ko. Allonger les deux meta, recompresser les quatre images en WebP sous 150 Ko sans changer leurs dimensions.",
-    "etat": "Pas commencé.",
+    "etat": "Démarré le 2026-11-22.",
     "date": "2026-11-21"
   },
   {
@@ -366,11 +366,11 @@
     "id": "CEN-09",
     "domaine": "Sites web",
     "titre": "Facturation électronique : vérifier Abby",
-    "statut": "en cours",
+    "statut": "fait",
     "priorite": "cette semaine",
     "compte": "Web",
     "brief": "J'ai déjà un compte Abby (WEB-003 cochée). Vérifier sur les sources officielles que Abby est une plateforme agréée pour recevoir et émettre des factures électroniques, et lister ce qui reste à configurer.",
-    "etat": "Démarré le 2026-11-22.",
+    "etat": "Fait le 2026-11-22 : Suivi/Autre/15-facturation-electronique-abby.docx. Abby figure dans le fichier PDF de la liste officielle DGFiP (impots.gouv.fr, page modifiée le 2026-11-16), immatriculation du 2026-01-29. Réserve : statut définitif ou en attente non tranché (nom du fichier différent de son intitulé), à vérifier dans les deux fichiers de la liste. Réception obligatoire depuis le 2026-09-01, émission à partir du 2027-09-01. 5 vérifications à faire dans le compte Abby (désignation pour la réception, notifications, mentions, fiches clients, plan). Adaptation des devis et CGV : point 13 du dossier juridique.",
     "date": "2026-11-22"
   },
   {
