@@ -179,12 +179,12 @@
     "id": "WEB-017",
     "domaine": "Sites web",
     "titre": "Confirmer les prix du panorama des outils sur les pages fournisseurs",
-    "statut": "en cours",
+    "statut": "fait",
     "priorite": "plus tard",
     "compte": "Web",
     "brief": "Seuls Cloudflare, Formspree, meetergo et Vercel viennent de leur documentation. Le reste vient de comparateurs. À confirmer avant tout achat, dont les limites d'Umami Cloud. Plan 5.1.",
-    "etat": "Document rédigé le 2026-10-13, prix non revérifiés.",
-    "date": "2026-11-20"
+    "etat": "Fait le 2026-11-21, arrêté à ta demande. Confirmés sur les pages fournisseurs : OVHcloud .fr 4,99 € HT puis 7,79 € HT et .com 7,99 € HT puis 13,49 € HT ; Figma Full seat 16 € annuel / 20 € mensuel (en euros, pas en dollars). Umami Hobby précisé : 100 000 événements, 1 site, 6 mois (pages tierces de novembre 2026). Non revérifiés : Cloudflare Web Analytics, Tiime, Indy, Abby, Webflow, Framer, Netlify, Calendly, Plausible, Cloudflare Registrar.",
+    "date": "2026-11-21"
   },
   {
     "id": "WEB-018",
