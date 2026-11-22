@@ -344,22 +344,22 @@
     "id": "mmwqb34sz",
     "domaine": "Sites web",
     "titre": "Demander l'ACRE et la CFE : marche à suivre",
-    "statut": "en cours",
+    "statut": "fait",
     "priorite": "cette semaine",
     "compte": "Web",
     "brief": "Rédiger la marche à suivre à jour, d'après les sources officielles : 1) la demande d'ACRE (conditions, délai, où et comment) ; 2) la CFE (exonération éventuelle la première année, déclaration, échéances). Dire ce que je dois faire, dans quel ordre, avec quels documents. Ensuite je fais les démarches (tâche à Moi).",
-    "etat": "Démarré le 2026-11-22.",
+    "etat": "Fait le 2026-11-22 : Suivi/Autre/13-acre-et-cfe-marche-a-suivre.docx (3 pages). ACRE : depuis 2026 demande obligatoire à l'Urssaf sous 60 jours après le début d'activité, réservée à certains profils, exonération de 25 % depuis le 2026-07-01. CFE : exonérée l'année de création, déclaration 1447-C-SD avant le 31 décembre, première échéance le 15 décembre N+1. Sources officielles et institutionnelles listées dans le document. Démarches à Moi : WEB-030. Date de début d'activité et éligibilité inconnues.",
     "date": "2026-11-22"
   },
   {
     "id": "CEN-08",
     "domaine": "Sites web",
     "titre": "Processus de réalisation d'un site vitrine client, avec suivi du temps",
-    "statut": "à faire",
+    "statut": "en cours",
     "priorite": "cette semaine",
     "compte": "Web",
     "brief": "Décrire les étapes de la signature à la livraison (brief client, contenus, maquette, développement avec Claude, relectures, mise en ligne, facture), avec un gabarit réutilisable et une feuille de suivi du temps par étape. But : mesurer si 10 h par site est tenable pour viser 1 client par semaine. Livrable dans le repo.",
-    "etat": "",
+    "etat": "Démarré le 2026-11-22.",
     "date": "2026-11-22"
   },
   {
