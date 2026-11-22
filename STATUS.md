@@ -33,8 +33,8 @@ Incohérences relevées (WEB-002, 010, 011, 019 à 025) :
 - Plan : toutes les incohérences relevées sont réglées (WEB-021 à 024).
 
 Prochaine étape :
-- Décisions tirées du site en ligne : acompte 30 % / 70 %, délai de 5 jours (réponses client sous 5 jours ouvrés), option A pour le domaine. J'aligne les documents du repo : WEB-002, 010, 019, 020 et 025 faits (acompte, délai, option A, mode d'emploi, tableau de suivi).
-- Plus aucune décision en attente.
+- Alignement des documents terminé (WEB-002, 010, 019 à 025) et suivi SEO rempli (WEB-013).
+- File restante, à ta demande je m'arrête ici : WEB-029 (meta descriptions courtes, images du lightbox trop lourdes), WEB-014 (contenus par intention de recherche), WEB-015 (bloqué : rapport Lighthouse, WEB-028 à Moi).
 - Choisir les codes NAF, lancer 05-liste-sirene.py.
 - Mettre en ligne la section Prospection de la politique de confidentialité avant tout premier email.
 - Envoyer 03, 06, 07 et 08 à un juriste avant toute signature ou prospection.
