@@ -326,7 +326,7 @@
     "priorite": "cette semaine",
     "compte": "Web",
     "brief": "Mails prêts à envoyer pour chaque prospect de ma liste locale. Modèle d'e-mail rédigé avec Moi. Liste et mails générés jamais dans le repo. Aucun envoi avant WEB-009.",
-    "etat": "Fait le 2026-11-22 : Suivi/01 - Prospection/11-generer-mails.py. Lit ta liste locale (xlsx ou csv), choisit le modèle A, B ou C selon les dates, écarte opposés, adresses grand public et sources vides, écrit un brouillon .eml par prospect et un rapport hors repo (refuse un dossier Git). N'envoie rien. Tes coordonnées viennent d'un config-local.json local. Testé sur données fictives. Modèles A, B, C repris de 01 : à valider avec Moi. Aucun envoi avant WEB-009.",
+    "etat": "Fait le 2026-11-22 : Suivi/01 - Prospection/11-generer-mails.py. Lit ta liste locale (xlsx ou csv), choisit le modèle A, B ou C selon les dates, écarte opposés, adresses grand public et sources vides, écrit un brouillon .eml par prospect et un rapport hors repo (refuse un dossier Git). N'envoie rien. Tes coordonnées viennent d'un config-local.json local. Testé sur données fictives. Modèles A, B, C repris de 01 : à valider avec Moi. Aucun envoi avant WEB-009. Mis à jour le 2026-11-22 : script adapté au fichier prospects-64-propre.xlsx (colonnes Nom et Email, filtre « Aucun site connu » pour le premier contact, option --groupe). Testé sur ce fichier : 32 brouillons possibles aujourd'hui, 48 écartés faute de ville.",
     "date": "2026-11-21"
   },
   {
