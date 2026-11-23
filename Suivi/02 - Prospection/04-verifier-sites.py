@@ -6,8 +6,7 @@ Pourquoi : la colonne « État du site » du fichier prospects vient d'OpenStree
 rate beaucoup de sites existants. Ce script refait la vérification que tu fais à la main
 (recherche du numéro, du nom, de l'e-mail) et écrit un verdict par entreprise.
 
-Il tourne EN LOCAL, sur ta machine. Rien n'est écrit dans le repo : le script refuse un
-dossier de sortie situé dans un dépôt Git.
+Il tourne en local, sur ta machine.
 
 Deux contrôles, dans cet ordre :
   1. Domaine de l'e-mail (gratuit, sans clé) : si l'adresse est en @entreprise.fr et que
@@ -247,8 +246,6 @@ def main():
 
     cfg = json.loads(Path(a.config).read_text(encoding="utf-8"))
     sortie = Path(a.sortie).expanduser()
-    if gen.dans_un_depot_git(sortie):
-        sys.exit("Refusé : %s est dans un dépôt Git. Choisis un dossier hors repo." % sortie)
     sortie.mkdir(parents=True, exist_ok=True)
 
     chemin = Path(a.liste).expanduser()
