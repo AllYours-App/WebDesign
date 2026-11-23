@@ -29,7 +29,7 @@
     "priorite": "aujourd'hui",
     "compte": "Moi",
     "brief": "Réception des factures électroniques obligatoire depuis 2026-09-01, émission B2B à partir de 2027-09-01. Comparer les offres gratuites (Tiime, Dougs, Abby, Indy) et vérifier le statut sur la liste officielle des plateformes agréées (impots.gouv.fr). Plan 4.6.",
-    "etat": "Fait : compte Abby déjà existant (coché par Moi le 2026-11-21). Statut d'agrément à vérifier : CEN-09.",
+    "etat": "Fait : compte Abby déjà existant (coché par Moi le 2026-11-21). Statut d'agrément à vérifier : CEN-09. Notes de Moi lues le 2026-11-23.",
     "date": "2026-11-20"
   },
   {
@@ -40,7 +40,7 @@
     "priorite": "cette semaine",
     "compte": "Web",
     "brief": "Les documents du dossier Suivi (devis, CGV, contrat, emails, mode d'emploi) contiennent tes coordonnées d'entreprise, dont une adresse qui semble personnelle. Le repo est public : le rendre privé ou retirer ces documents. Décision à prendre, je ne modifie pas les fichiers existants sans ton accord.",
-    "etat": "Fait le 2026-11-22 : adresse, téléphone, e-mail personnel et SIRET remplacés par des placeholders dans 10 documents du dossier Suivi et dans le défaut de 01-appliquer-domaine.py ; auteur retiré des métadonnées des docx. Le nom d'entreprise est conservé (public sur le site). Les anciennes versions restent visibles dans l'historique Git du repo public.",
+    "etat": "Fait le 2026-11-22 : adresse, téléphone, e-mail personnel et SIRET remplacés par des placeholders dans 10 documents du dossier Suivi et dans le défaut de 01-appliquer-domaine.py ; auteur retiré des métadonnées des docx. Le nom d'entreprise est conservé (public sur le site). Les anciennes versions restent visibles dans l'historique Git du repo public. Notes de Moi lues le 2026-11-23.",
     "date": "2026-11-20"
   },
   {
@@ -84,8 +84,9 @@
     "priorite": "cette semaine",
     "compte": "Moi",
     "brief": "Les emails renvoient vers la section Prospection commerciale de la politique de confidentialité du site : elle doit être en ligne avant le premier envoi. Ajouter aussi l'adresse du site en signature des emails. Plan 2.4 et 2.7.",
-    "etat": "Section rédigée, publication non confirmée.",
-    "date": "2026-11-20"
+    "etat": "Section « Prospection commerciale » présente dans mywebsite/confidentialite.html (vérifié dans le repo le 2026-11-23). Mise en ligne non confirmée : à vérifier sur le site.",
+    "date": "2026-11-20",
+    "livrable": "mywebsite/confidentialite.html; WebDesign/Suivi/02 - Prospection/05-emails-prospection.docx"
   },
   {
     "id": "WEB-009",
@@ -303,7 +304,7 @@
     "statut": "à faire",
     "priorite": "cette semaine",
     "compte": "Moi",
-    "brief": "Pour améliorer le score mobile de la page contact (89, objectif 90 et plus) : ouvre https://www.ducoinweb.fr/contact dans Chrome, F12, onglet Lighthouse, Device sur Mobile, lance l'analyse, puis menu à trois points, Save as JSON. Colle le contenu du fichier dans le chat ou envoie-le moi. [WEB-015]",
+    "brief": "Ouvre https://www.ducoinweb.fr/contact dans Chrome, F12, Lighthouse, Mobile, lance l'analyse, Save as JSON. Colle le contenu dans le chat du compte Web.",
     "etat": "Pas commencé.",
     "date": "2026-11-21"
   },
@@ -382,7 +383,8 @@
     "compte": "Moi",
     "brief": "Suivre Suivi/01 - Démarches administratives/01-acre-et-cfe-marche-a-suivre.docx. 1) Relever ta date de début d'activité. 2) Si tu es éligible, demander l'ACRE à l'Urssaf dans les 60 jours après cette date. 3) Déposer la déclaration initiale de CFE (1447-C-SD) avant le 31 décembre 2026 si l'activité a démarré en 2026.",
     "etat": "Pas commencé. Dates limites : 60 jours après le début d'activité (ACRE), 2026-12-31 (CFE).",
-    "date": "2026-11-22"
+    "date": "2026-11-22",
+    "livrable": "WebDesign/Suivi/01 - Démarches administratives/01-acre-et-cfe-marche-a-suivre.docx"
   },
   {
     "id": "WEB-031",
@@ -393,6 +395,31 @@
     "compte": "Moi",
     "brief": "1) Créer une clé Brave Search sur brave.com/search/api (crédit mensuel d'environ 1 000 requêtes, carte demandée : vérifie les conditions à l'inscription) et l'ajouter dans config-local.json, hors repo. 2) Lancer 04-verifier-sites.py sur ton fichier (d'abord avec --groupe Restauration pour tester). 3) Relire à la main 10 résultats « Aucun site apparent » et me dire combien sont faux.",
     "etat": "Pas commencé.",
-    "date": "2026-11-22"
+    "date": "2026-11-22",
+    "livrable": "WebDesign/Suivi/02 - Prospection/04-verifier-sites.py"
+  },
+  {
+    "id": "WEB-032",
+    "domaine": "Sites web",
+    "titre": "Décisions et vérifications en attente",
+    "statut": "à faire",
+    "priorite": "cette semaine",
+    "compte": "Moi",
+    "brief": "1) Valide les modèles de mail A, B, C.\n2) Décide des pages par secteur à créer (onglet « Pages à créer »).\n3) Regarde l'image schoolsurf mobile sur la page Réalisations.\n4) Vérifie le statut d'Abby dans les deux fichiers de la liste officielle.",
+    "etat": "Pas commencé.",
+    "date": "2026-11-23",
+    "livrable": "WebDesign/Suivi/02 - Prospection/05-emails-prospection.docx; WebDesign/Suivi/05 - SEO/04-contenu-par-intention.xlsx; mywebsite/realisations.html; WebDesign/Suivi/01 - Démarches administratives/02-facturation-electronique-abby.docx"
+  },
+  {
+    "id": "WEB-033",
+    "domaine": "Sites web",
+    "titre": "Fichier « À faire par toi » du repo WebDesign",
+    "statut": "fait",
+    "priorite": "cette semaine",
+    "compte": "Web",
+    "brief": "Regrouper toutes les tâches à Moi dans un fichier accessible depuis l'appli, avec les liens des fichiers concernés.",
+    "etat": "Fait le 2026-11-23 : A-FAIRE-PAR-TOI.md à la racine (nom reconnu par l'onglet Mes fichiers). 5 tâches à Moi ouvertes (WEB-008, 028, 030, 031, 032), CEN-22 cité depuis Central, tâches faites listées. WEB-032 regroupe les décisions et vérifications en attente.",
+    "date": "2026-11-23",
+    "livrable": "WebDesign/A-FAIRE-PAR-TOI.md"
   }
 ]
