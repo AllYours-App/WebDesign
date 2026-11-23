@@ -1,6 +1,7 @@
 # Statut : compte Web
 
 Fait :
+- WEB-033 : A-FAIRE-PAR-TOI.md à la racine, toutes tes tâches avec le lien des fichiers (2026-11-23).
 - WEB-014 : contenu par intention de recherche, 5 pages du site précisées (titres, H1, H2) et tableau 04-contenu-par-intention.xlsx (2026-11-22).
 - Repo WebDesign réorganisé dans l'ordre de travail (dossiers Suivi/00 à 06, fichiers numérotés dans chaque dossier), renvois corrigés dans les documents, scripts, tasks.json et STATUS.md (2026-11-22).
 - WEB-029 : meta descriptions de mentions-legales et realisations allongées, 4 images du lightbox recompressées sous 150 Ko (repo mywebsite, 2026-11-22).
@@ -40,9 +41,9 @@ Incohérences relevées (WEB-002, 010, 011, 019 à 025) :
 - Plan : toutes les incohérences relevées sont réglées (WEB-021 à 024).
 
 Prochaine étape :
-- À Moi : WEB-008, WEB-028, WEB-030, WEB-031.
+- À Moi : WEB-008, WEB-028, WEB-030, WEB-031, WEB-032 (voir A-FAIRE-PAR-TOI.md).
 
 File vide.
 
-Mis à jour le : 2026-11-22
-Rythme : 23 tâches terminées sur la dernière fenêtre de 5 h
+Mis à jour le : 2026-11-23
+Rythme : 1 tâche terminée sur la dernière fenêtre de 5 h
