@@ -15,7 +15,6 @@ Contraintes (budget, matériel, règles) :
 - Je travaille seul, environ 2 h par jour sur ce projet (à définir).
 - Budget très limité aujourd'hui. Des dépenses d'outils sont envisageables plus tard.
 - Je débute : le nombre de sites que je peux livrer par mois est à mesurer.
-- Pas de prospection ni de signature avant la relecture juridique du devis, des CGV et du contrat.
 - Les coordonnées de prospects ne vont jamais dans le repo public.
 - Facturation électronique : choisir une plateforme (réception obligatoire depuis le 2026-09-01).
 
