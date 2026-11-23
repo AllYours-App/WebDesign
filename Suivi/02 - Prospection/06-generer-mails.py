@@ -5,11 +5,7 @@
 Ce script NE ENVOIE RIEN. Il écrit un brouillon .eml par prospect (s'ouvre dans
 Outlook, Thunderbird, Apple Mail) et un rapport. Tu relis, puis tu envoies à la main.
 
-Règles qui protègent le repo public :
-- la liste de prospects et les mails générés restent EN LOCAL ;
-- le script refuse d'écrire dans un dossier qui se trouve dans un dépôt Git ;
-- tes coordonnées (e-mail, téléphone, SIRET) viennent d'un fichier local
-  config-local.json, jamais du repo.
+Tes coordonnées (e-mail, téléphone, SIRET) viennent d'un fichier config-local.json, pas du script.
 
 Utilisation :
   1. Crée config-local.json hors du repo, par exemple dans ~/prospection-local/ :
@@ -252,11 +248,6 @@ def verifier(p, opposes):
 # ---------------------------------------------------------------------------
 # Écriture des brouillons
 # ---------------------------------------------------------------------------
-def dans_un_depot_git(dossier):
-    d = dossier.resolve()
-    return any((parent / ".git").exists() for parent in [d, *d.parents])
-
-
 def nom_fichier(texte_libre):
     return re.sub(r"[^A-Za-z0-9]+", "-", texte_libre).strip("-").lower()[:40] or "prospect"
 
@@ -296,7 +287,7 @@ def main():
     ap.add_argument("liste", help="tableau .xlsx (onglet Prospects) ou .csv, en local")
     ap.add_argument("--config", required=True, help="config-local.json (hors repo)")
     ap.add_argument("--sortie", default=str(Path.home() / "prospection-local" / "mails"),
-                    help="dossier de sortie (hors dépôt Git)")
+                    help="dossier de sortie")
     ap.add_argument("--date", help="AAAA-MM-JJ : simule un autre jour (par défaut aujourd'hui)")
     ap.add_argument("--verif", help="verification-sites.csv produit par 04-verifier-sites.py")
     ap.add_argument("--sans-verification", action="store_true",
@@ -315,8 +306,6 @@ def main():
         sys.exit("--date doit être au format AAAA-MM-JJ.")
 
     sortie = Path(a.sortie).expanduser() / aujourdhui.isoformat()
-    if dans_un_depot_git(sortie):
-        sys.exit("Refusé : %s est dans un dépôt Git. Choisis un dossier hors repo." % sortie)
     sortie.mkdir(parents=True, exist_ok=True)
 
     chemin = Path(a.liste).expanduser()
