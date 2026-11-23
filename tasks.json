@@ -91,11 +91,11 @@
     "id": "WEB-009",
     "domaine": "Sites web",
     "titre": "Relecture juridique : conformité, devis, CGV et contrat",
-    "statut": "à faire",
+    "statut": "fait",
     "priorite": "plus tard",
     "compte": "Moi",
-    "brief": "À faire avant toute signature client et avant de lancer la prospection. Dossier prêt à envoyer : Suivi/03 - Contrats/04-dossier-relecture-juridique.docx (partie 2, 14 points, priorité aux points 1, 5 et 9). Choisir la voie et le budget (partie 1). Plan 4.5.",
-    "etat": "Décision de Moi le 2026-11-22 : on part du principe que les documents sont bons, la relecture est reportée et sera reprise si besoin. Dossier prêt : Suivi/03 - Contrats/04-dossier-relecture-juridique.docx.",
+    "brief": "Retirée.",
+    "etat": "Retirée sur décision de Moi le 2026-11-22 : pas de relecture juridique. À cocher dans Central pour qu'elle n'y revienne pas.",
     "date": "2026-11-20"
   },
   {
@@ -325,8 +325,8 @@
     "statut": "fait",
     "priorite": "cette semaine",
     "compte": "Web",
-    "brief": "Mails prêts à envoyer pour chaque prospect de ma liste locale. Modèle d'e-mail rédigé avec Moi. Liste et mails générés jamais dans le repo. Aucun envoi avant WEB-009.",
-    "etat": "Fait le 2026-11-22 : Suivi/02 - Prospection/06-generer-mails.py. Lit ta liste locale (xlsx ou csv), choisit le modèle A, B ou C selon les dates, écarte opposés, adresses grand public et sources vides, écrit un brouillon .eml par prospect et un rapport hors repo (refuse un dossier Git). N'envoie rien. Tes coordonnées viennent d'un config-local.json local. Testé sur données fictives. Modèles A, B, C repris de 01 : à valider avec Moi. Aucun envoi avant WEB-009. Mis à jour le 2026-11-22 : script adapté au fichier 03-prospects-64-propre.xlsx (colonnes Nom et Email, filtre « Aucun site connu » pour le premier contact, option --groupe). Testé sur ce fichier : 32 brouillons possibles aujourd'hui, 48 écartés faute de ville. Ajout le 2026-11-22 (retour de Moi : des entreprises « sans site » en ont un) : 04-verifier-sites.py contrôle le domaine de l'e-mail puis cherche le téléphone et le nom par recherche web (clé Brave) ; 06-generer-mails.py n'écrit un premier mail que pour « Aucun site apparent » (option --verif). Logique testée avec un faux moteur de recherche, pas sur le vrai web : le bac à sable n'a pas d'accès web.",
+    "brief": "Mails prêts à envoyer pour chaque prospect de ma liste locale. Modèle d'e-mail rédigé avec Moi. Liste et mails générés jamais dans le repo.",
+    "etat": "Fait le 2026-11-22 : Suivi/02 - Prospection/06-generer-mails.py. Lit ta liste locale (xlsx ou csv), choisit le modèle A, B ou C selon les dates, écarte opposés, adresses grand public et sources vides, écrit un brouillon .eml par prospect et un rapport hors repo (refuse un dossier Git). N'envoie rien. Tes coordonnées viennent d'un config-local.json local. Testé sur données fictives. Modèles A, B, C repris de 01 : à valider avec Moi. Mis à jour le 2026-11-22 : script adapté au fichier 03-prospects-64-propre.xlsx (colonnes Nom et Email, filtre « Aucun site connu » pour le premier contact, option --groupe). Testé sur ce fichier : 32 brouillons possibles aujourd'hui, 48 écartés faute de ville. Ajout le 2026-11-22 (retour de Moi : des entreprises « sans site » en ont un) : 04-verifier-sites.py contrôle le domaine de l'e-mail puis cherche le téléphone et le nom par recherche web (clé Brave) ; 06-generer-mails.py n'écrit un premier mail que pour « Aucun site apparent » (option --verif). Logique testée avec un faux moteur de recherche, pas sur le vrai web : le bac à sable n'a pas d'accès web.",
     "date": "2026-11-21"
   },
   {
@@ -337,7 +337,7 @@
     "priorite": "cette semaine",
     "compte": "Web",
     "brief": "Préparer un dossier unique pour un juriste : la note de conformité, le devis, les CGV et le contrat, les points précis à vérifier (acompte, délais, propriété du site, prospection par e-mail et RGPD, facturation électronique), les questions à poser, et comment trouver un juriste ou un service de relecture (coût estimé). But : débloquer WEB-009 et le démarrage de la prospection.",
-    "etat": "Fait le 2026-11-22 : Suivi/03 - Contrats/04-dossier-relecture-juridique.docx (7 pages). Partie 1 pour Moi : marche à suivre, voies (permanence gratuite du barreau de Bayonne, avocat, relecture en ligne, juriste indépendant), budget estimé 700 à 900 € HT à confirmer par devis. Partie 2 à envoyer : contexte, pièces, 14 points à vérifier, questions de la note 03. Prix et règles issus de sources publiques à confirmer. Reste à Moi : choisir la voie et envoyer (WEB-009).",
+    "etat": "Fait le 2026-11-22 : Suivi/03 - Contrats/04-dossier-relecture-juridique.docx (7 pages). Partie 1 pour Moi : marche à suivre, voies (permanence gratuite du barreau de Bayonne, avocat, relecture en ligne, juriste indépendant), budget estimé 700 à 900 € HT à confirmer par devis. Partie 2 à envoyer : contexte, pièces, 14 points à vérifier, questions de la note 03. Prix et règles issus de sources publiques à confirmer. Dossier supprimé du repo le 2026-11-22 : relecture juridique retirée par décision de Moi (il reste dans l'historique Git).",
     "date": "2026-11-22"
   },
   {
@@ -391,7 +391,7 @@
     "statut": "à faire",
     "priorite": "cette semaine",
     "compte": "Moi",
-    "brief": "1) Créer une clé Brave Search sur brave.com/search/api (crédit mensuel d'environ 1 000 requêtes, carte demandée : vérifie les conditions à l'inscription) et l'ajouter dans config-local.json, hors repo. 2) Lancer 04-verifier-sites.py sur ton fichier (d'abord avec --groupe Restauration pour tester). 3) Relire à la main 10 résultats « Aucun site apparent » et me dire combien sont faux. Aucun envoi avant WEB-009.",
+    "brief": "1) Créer une clé Brave Search sur brave.com/search/api (crédit mensuel d'environ 1 000 requêtes, carte demandée : vérifie les conditions à l'inscription) et l'ajouter dans config-local.json, hors repo. 2) Lancer 04-verifier-sites.py sur ton fichier (d'abord avec --groupe Restauration pour tester). 3) Relire à la main 10 résultats « Aucun site apparent » et me dire combien sont faux.",
     "etat": "Pas commencé.",
     "date": "2026-11-22"
   }

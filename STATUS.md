@@ -7,7 +7,7 @@ Fait :
 - CEN-09 : Abby figure sur la liste officielle des plateformes agréées (immatriculation du 2026-01-29), statut définitif à confirmer ; marche à suivre dans 02-facturation-electronique-abby.docx (2026-11-22).
 - CEN-08 : processus de réalisation d'un site en 11 étapes, gabarit de suivi du temps et synthèse (01-processus-site-client-et-suivi-temps.xlsx, 2026-11-22).
 - mmwqb34sz : marche à suivre ACRE et CFE (01-acre-et-cfe-marche-a-suivre.docx), démarches à Moi dans WEB-030 (2026-11-22).
-- CEN-07 : dossier de relecture juridique 04-dossier-relecture-juridique.docx (14 points à vérifier, voies et budget estimé), prêt pour WEB-009 (2026-11-22).
+- CEN-07 : dossier de relecture juridique réalisé puis supprimé du repo : relecture juridique retirée par décision de Moi (2026-11-22).
 - mmwqtcy40 : outil local 06-generer-mails.py (brouillons .eml depuis ta liste locale, aucun envoi, sortie hors repo) ; modèles A, B, C à valider avec toi (2026-11-22).
 - WEB-004 : coordonnées personnelles retirées du repo public (placeholders dans 10 documents Suivi et 01-appliquer-domaine.py), historique Git non purgé (2026-11-22).
 - WEB-002 : acompte aligné à 30 % / 70 % dans le devis et le contrat (2026-11-21).
@@ -19,7 +19,7 @@ Fait :
 - Site vitrine en ligne sur ducoinweb.fr (domaine OVH, DNS Cloudflare, Worker, HTTPS testé). Formulaire Formspree testé, rendez-vous meetergo intégré, mentions légales et confidentialité renseignées, aucun cookie.
 - Tests : accueil à 100 partout, contact à 89 en performance et 100 pour le reste.
 - Prospection (Suivi/02) : conformité, script Sirene, liste des prospects 64, vérification des sites, 3 emails + 2 réponses types, génération des mails, script d'appel, tableau de suivi (vide).
-- Contrats (Suivi/03) : devis type, CGV, contrat de prestation avec cession de droits et article L. 221-3, dossier de relecture. Tous à l'état de projet, pas encore relus par un juriste.
+- Contrats (Suivi/03) : devis type, CGV, contrat de prestation avec cession de droits et article L. 221-3. Tous à l'état de projet, non relus par un juriste (décision de Moi).
 - SEO (Suivi/05) : script 01-appliquer-domaine.py, guide Google Business Profile / Search Console, 03-suivi-seo.xlsx, 04-contenu-par-intention.xlsx.
 - Procédures : plan de lancement client à dupliquer (phases 6 à 8), mode d'emploi client, panorama des outils (phase 5).
 
@@ -28,7 +28,7 @@ En cours :
 
 Bloqué :
 - WEB-015 : attend le rapport Lighthouse JSON de la page contact (WEB-028, à Moi).
-- Rien ne bloque la prospection : relecture juridique WEB-009 reportée par décision de Moi (2026-11-22), à reprendre si besoin.
+- Rien ne bloque la prospection : relecture juridique retirée par décision de Moi (2026-11-22).
 
 Incohérences relevées (WEB-002, 010, 011, 019 à 025) :
 - Acompte : réglé (30 % / 70 %).
@@ -40,7 +40,7 @@ Incohérences relevées (WEB-002, 010, 011, 019 à 025) :
 - Plan : toutes les incohérences relevées sont réglées (WEB-021 à 024).
 
 Prochaine étape :
-- À Moi : WEB-008, WEB-009, WEB-028, WEB-030, WEB-031.
+- À Moi : WEB-008, WEB-028, WEB-030, WEB-031.
 
 File vide.
 

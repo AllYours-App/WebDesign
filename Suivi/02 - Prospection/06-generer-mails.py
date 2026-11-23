@@ -4,7 +4,6 @@
 
 Ce script NE ENVOIE RIEN. Il écrit un brouillon .eml par prospect (s'ouvre dans
 Outlook, Thunderbird, Apple Mail) et un rapport. Tu relis, puis tu envoies à la main.
-AUCUN ENVOI avant la relecture juridique (WEB-009).
 
 Règles qui protègent le repo public :
 - la liste de prospects et les mails générés restent EN LOCAL ;
@@ -360,7 +359,6 @@ def main():
         generes.append((i, nom, modele, msg["To"], msg["Subject"], fichier.name))
 
     rapport = ["Rapport du %s" % aujourdhui.strftime("%d/%m/%Y"),
-               "NE PAS ENVOYER avant la relecture juridique (WEB-009).",
                "Relis chaque brouillon. Puis note les dates d'envoi dans le tableau de suivi.", "",
                "%d brouillon(s) généré(s) :" % len(generes)]
     for i, nom, modele, a_qui, objet, f in generes:
@@ -370,7 +368,7 @@ def main():
         rapport.append("  ligne %d | %s | %s" % (i, nom, raison))
     (sortie / "rapport.txt").write_text("\n".join(rapport) + "\n", encoding="utf-8")
 
-    print("\n".join(rapport[:5]))
+    print("\n".join(rapport[:4]))
     print("Dossier : %s" % sortie)
 
 
