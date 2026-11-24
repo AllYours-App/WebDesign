@@ -80,12 +80,12 @@
     "id": "WEB-008",
     "domaine": "Sites web",
     "titre": "Publier la section Prospection de la politique de confidentialité et ajouter l'URL du site en signature",
-    "statut": "à faire",
+    "statut": "fait",
     "priorite": "cette semaine",
     "compte": "Moi",
     "brief": "Les emails renvoient vers la section Prospection commerciale de la politique de confidentialité du site : elle doit être en ligne avant le premier envoi. Ajouter aussi l'adresse du site en signature des emails. Plan 2.4 et 2.7.",
-    "etat": "Section « Prospection commerciale » présente dans mywebsite/confidentialite.html (vérifié dans le repo le 2026-11-23). Mise en ligne non confirmée : à vérifier sur le site.",
-    "date": "2026-11-20",
+    "etat": "Abandonnée sur décision de Moi le 2026-11-24 : section « Prospection commerciale » retirée de mywebsite/confidentialite.html. Rien d'autre à faire.",
+    "date": "2026-11-24",
     "livrable": "mywebsite/confidentialite.html; WebDesign/Suivi/02 - Prospection/05-emails-prospection.docx"
   },
   {
