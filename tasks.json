@@ -162,8 +162,8 @@
     "priorite": "plus tard",
     "compte": "Web",
     "brief": "Lighthouse mobile : contact à 89 en performance, objectif 90 et plus (phase 8.3). Le calendrier meetergo est déjà chargé après l'affichage. Besoin du rapport JSON de la page pour corriger.",
-    "etat": "Bloqué : j'ai besoin du rapport Lighthouse JSON de la page contact (WEB-028).",
-    "date": "2026-11-21"
+    "etat": "Rapport reçu (WEB-028) : performance 85, seul le temps de blocage pénalise (TBT 570 ms ; FCP 1,2 s, LCP 1,6 s, CLS 0). Cause principale : le script anti-robot Cloudflare Turnstile se chargeait dès l'affichage (environ 1,4 Mo de ressources, 94 % du poids de la page vient de tiers). Correctif poussé dans mywebsite/js/form.js (commit 7a57442) : Turnstile se charge au premier contact avec le formulaire, quand il approche de l'écran, ou à l'envoi ; cadre réservé, donc pas de décalage ; logique testée sous jsdom. Le calendrier meetergo reste chargé après l'affichage, non modifié. Non vérifié sur le site : attend le contrôle Lighthouse après déploiement (WEB-034).",
+    "date": "2026-11-24"
   },
   {
     "id": "WEB-016",
@@ -301,12 +301,12 @@
     "id": "WEB-028",
     "domaine": "Sites web",
     "titre": "Envoyer le rapport Lighthouse JSON de la page contact",
-    "statut": "à faire",
+    "statut": "fait",
     "priorite": "cette semaine",
     "compte": "Moi",
     "brief": "Ouvre https://www.ducoinweb.fr/contact dans Chrome, F12, Lighthouse, Mobile, lance l'analyse, Save as JSON. Colle le contenu dans le chat du compte Web.",
-    "etat": "Pas commencé.",
-    "date": "2026-11-21"
+    "etat": "Rapport reçu le 2026-11-24 : performance 85, accessibilité 100, bonnes pratiques 100, SEO 100 (Lighthouse mobile, page contact).",
+    "date": "2026-11-24"
   },
   {
     "id": "WEB-029",
@@ -421,5 +421,16 @@
     "etat": "Fait le 2026-11-23 : A-FAIRE-PAR-TOI.md à la racine (nom reconnu par l'onglet Mes fichiers). 5 tâches à Moi ouvertes (WEB-008, 028, 030, 031, 032), CEN-22 cité depuis Central, tâches faites listées. WEB-032 regroupe les décisions et vérifications en attente.",
     "date": "2026-11-23",
     "livrable": "WebDesign/A-FAIRE-PAR-TOI.md"
+  },
+  {
+    "id": "WEB-034",
+    "domaine": "Sites web",
+    "titre": "Contrôler la page contact après correctif",
+    "statut": "à faire",
+    "priorite": "cette semaine",
+    "compte": "Moi",
+    "brief": "1) Attends 2 minutes après le déploiement, puis relance Lighthouse mobile sur https://www.ducoinweb.fr/contact (même méthode que WEB-028) et colle le JSON dans le chat du compte Web.\n2) Envoie un message de test avec le formulaire et vérifie qu'il arrive bien.\n3) Facultatif : même contrôle sur la page Réalisations (images recompressées, WEB-029).",
+    "etat": "Pas commencé.",
+    "date": "2026-11-24"
   }
 ]
