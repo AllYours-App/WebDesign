@@ -1,6 +1,7 @@
 # Statut : compte Web
 
 Fait :
+- WEB-015 : correctif de performance poussé dans mywebsite/js/form.js (Turnstile chargé à la demande), vérification en attente (WEB-034, 2026-11-24).
 - WEB-008 : abandonnée, section Prospection retirée de mywebsite/confidentialite.html (2026-11-24).
 - WEB-033 : A-FAIRE-PAR-TOI.md à la racine, toutes tes tâches avec le lien des fichiers (2026-11-23).
 - WEB-014 : contenu par intention de recherche, 5 pages du site précisées (titres, H1, H2) et tableau 04-contenu-par-intention.xlsx (2026-11-22).
@@ -19,7 +20,7 @@ Fait :
 - WEB-013 : suivi SEO rempli (14 pages, 26 tâches vérifiées, Base 23 sur 41).
 - WEB-017 : prix OVHcloud et Figma confirmés, limites Umami précisées dans le panorama des outils. Les autres prix restent non revérifiés.
 - Site vitrine en ligne sur ducoinweb.fr (domaine OVH, DNS Cloudflare, Worker, HTTPS testé). Formulaire Formspree testé, rendez-vous meetergo intégré, mentions légales et confidentialité renseignées, aucun cookie.
-- Tests : accueil à 100 partout, contact à 89 en performance et 100 pour le reste.
+- Tests : accueil à 100 partout, contact à 85 en performance (rapport du 2026-11-24, TBT 570 ms) et 100 pour le reste.
 - Prospection (Suivi/02) : conformité, script Sirene, liste des prospects 64, vérification des sites, 3 emails + 2 réponses types, génération des mails, script d'appel, tableau de suivi (vide).
 - Contrats (Suivi/03) : devis type, CGV, contrat de prestation avec cession de droits et article L. 221-3. Tous à l'état de projet, non relus par un juriste (décision de Moi).
 - SEO (Suivi/05) : script 01-appliquer-domaine.py, guide Google Business Profile / Search Console, 03-suivi-seo.xlsx, 04-contenu-par-intention.xlsx.
@@ -29,7 +30,7 @@ En cours :
 - Rien.
 
 Bloqué :
-- WEB-015 : attend le rapport Lighthouse JSON de la page contact (WEB-028, à Moi).
+- WEB-015 : correctif poussé, attend le contrôle Lighthouse après déploiement (WEB-034, à Moi).
 - Rien ne bloque la prospection : relecture juridique retirée par décision de Moi (2026-11-22).
 
 Incohérences relevées (WEB-002, 010, 011, 019 à 025) :
@@ -42,7 +43,7 @@ Incohérences relevées (WEB-002, 010, 011, 019 à 025) :
 - Plan : toutes les incohérences relevées sont réglées (WEB-021 à 024).
 
 Prochaine étape :
-- À Moi : WEB-028, WEB-030, WEB-031, WEB-032 (voir A-FAIRE-PAR-TOI.md).
+- À Moi : WEB-030, WEB-031, WEB-032, WEB-034 (voir A-FAIRE-PAR-TOI.md).
 
 File vide.
 
