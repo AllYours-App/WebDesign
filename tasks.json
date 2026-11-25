@@ -382,7 +382,7 @@
     "priorite": "cette semaine",
     "compte": "Moi",
     "brief": "Suivre Suivi/01 - Démarches administratives/01-acre-et-cfe-marche-a-suivre.docx. 1) Relever ta date de début d'activité. 2) Si tu es éligible, demander l'ACRE à l'Urssaf dans les 60 jours après cette date. 3) Déposer la déclaration initiale de CFE (1447-C-SD) avant le 31 décembre 2026 si l'activité a démarré en 2026.",
-    "etat": "Pas commencé. Dates limites : 60 jours après le début d'activité (ACRE), 2026-12-31 (CFE).",
+    "etat": "ACRE demandée à l'Urssaf, réponse attendue (note de Moi du 2026-11-24). Compte impots.gouv activé, code d'activation attendu par courrier (note du 2026-11-24). Reste la déclaration CFE 1447-C-SD avant le 2026-12-31. Notes de Moi lues le 2026-11-25.",
     "date": "2026-11-22",
     "livrable": "WebDesign/Suivi/01 - Démarches administratives/01-acre-et-cfe-marche-a-suivre.docx"
   },
@@ -426,11 +426,122 @@
     "id": "WEB-034",
     "domaine": "Sites web",
     "titre": "Contrôler la page contact après correctif",
-    "statut": "à faire",
+    "statut": "fait",
     "priorite": "cette semaine",
     "compte": "Moi",
     "brief": "1) Envoie un message de test avec le formulaire de contact et vérifie qu'il arrive bien.\n2) Facultatif : relance Lighthouse mobile sur la page Réalisations et colle le JSON dans le chat du compte Web.",
-    "etat": "Rapport Lighthouse de la page contact reçu le 2026-11-24 (performance 91). Reste le message de test du formulaire.",
+    "etat": "Fait par Moi (coché dans Central le 2026-11-24). Rapport Lighthouse de la page contact reçu le 2026-11-24 (performance 91). Reste le message de test du formulaire.",
     "date": "2026-11-24"
+  },
+  {
+    "id": "CEN-29",
+    "domaine": "Sites web",
+    "titre": "Retirer la liste de prospects du repo public",
+    "statut": "à faire",
+    "priorite": "cette semaine",
+    "compte": "Web",
+    "brief": "Suivi/02 - Prospection/03-prospects-64-propre.xlsx contient 4 364 lignes avec téléphones et e-mails d'entreprises, contre OBJECTIFS.md (liste jamais dans le repo). Le remplacer par un gabarit vide (mêmes colonnes, formules et onglets), ajouter un .gitignore pour les fichiers de liste, faire pointer 04-verifier-sites.py et 06-generer-mails.py vers un chemin local hors repo, corriger les renvois. Aucune donnée de tiers ailleurs. Noter que l'historique Git garde l'ancienne version.",
+    "etat": "Créée le 2026-11-25 depuis Central. Pas commencée.",
+    "date": "2026-11-24"
+  },
+  {
+    "id": "CEN-30",
+    "domaine": "Sites web",
+    "titre": "Fiche d'appel du jour et saisie rapide des résultats",
+    "statut": "à faire",
+    "priorite": "cette semaine",
+    "compte": "Web",
+    "brief": "Script local 09-fiche-appel-du-jour.py : lit la liste locale, retient « Aucun site connu » avec téléphone et jamais contactées, groupe par secteur, sort une fiche de 15 lignes (nom, ville, activité, source, phrase d'ouverture de 07-script-appel.docx) en .html hors repo. Script 10-saisir-resultat.py : une commande par appel (statut, date, rappel) qui met à jour le tableau de suivi. Règles de conformité du plan respectées (opposition, 3 contacts maximum).",
+    "etat": "Créée le 2026-11-25 depuis Central. Pas commencée.",
+    "date": "2026-11-24"
+  },
+  {
+    "id": "CEN-31",
+    "domaine": "Sites web",
+    "titre": "Mail de premier contact par secteur (6 secteurs)",
+    "statut": "à faire",
+    "priorite": "cette semaine",
+    "compte": "Web",
+    "brief": "Pour Restauration, Hébergement, Beauté et services, Santé, Artisanat, Commerce : une variante du mail A avec objet et première phrase propres au secteur, 3 objets de test par secteur. Aucun chiffre sans source, aucune promesse de classement, même mention RGPD en bas. Intégrer le choix par Groupe dans 06-generer-mails.py. Mettre à jour 05-emails-prospection.docx.",
+    "etat": "Créée le 2026-11-25 depuis Central. Pas commencée.",
+    "date": "2026-11-24"
+  },
+  {
+    "id": "CEN-32",
+    "domaine": "Sites web",
+    "titre": "Déroulé du rendez-vous de 30 min et suites jusqu'à la signature",
+    "statut": "à faire",
+    "priorite": "cette semaine",
+    "compte": "Web",
+    "brief": "Documenter dans Suivi/02 - Prospection/09-deroule-rdv.docx : questions de découverte, présentation des formules (900 € / 1 600 €), objections, devis envoyé dans l'heure (01-devis-type), relances J+2 et J+5, signature, acompte 30 %, transmission du brief au compte qui construit le site. Aucune référence citée tant qu'il n'y en a pas (voir CEN-37).",
+    "etat": "Créée le 2026-11-25 depuis Central. Pas commencée.",
+    "date": "2026-11-24"
+  },
+  {
+    "id": "CEN-33",
+    "domaine": "Sites web",
+    "titre": "Méthode anti-répétition des designs de sites",
+    "statut": "à faire",
+    "priorite": "cette semaine",
+    "compte": "Web",
+    "brief": "Créer Suivi/07 - Design/01-methode-diversite.md : 1) brief inversé : 3 wireframes très différents avant tout style ; 2) direction artistique tirée par règles, pas au goût de Claude ; 3) registre-designs.md : palette, polices, hero, navigation, forme de chaque site livré, règle « différent des 5 derniers sur au moins 4 axes » ; 4) interdits : polices par défaut, dégradés violets, 3 cartes identiques, hero centré avec 2 boutons, glassmorphism ; 5) 3 références réelles par client (Awwwards, Godly, Land-book) dont on extrait la structure sans copier ; 6) contrôle de ressemblance avant livraison.",
+    "etat": "Créée le 2026-11-25 depuis Central. Pas commencée.",
+    "date": "2026-11-24"
+  },
+  {
+    "id": "CEN-34",
+    "domaine": "Sites web",
+    "titre": "Banque de directions artistiques 1/2 (10 fiches)",
+    "statut": "à faire",
+    "priorite": "cette semaine",
+    "compte": "Web",
+    "brief": "Suivi/07 - Design/02-directions-artistiques-1.md : 10 fiches très différentes (par exemple éditorial serif, brutalisme doux, artisanal texturé, suisse minimal, rétro, sombre luxe, organique, bento, géométrique coloré, photo plein écran). Par fiche : secteurs adaptés, palette en hex avec contrastes AA vérifiés, 2 polices Google Fonts avec repli, échelle typographique, grille, forme des composants, traitement des images, mouvement, élément signature, interdits, variables CSS Client-First prêtes à copier.",
+    "etat": "Créée le 2026-11-25 depuis Central. Pas commencée.",
+    "date": "2026-11-24"
+  },
+  {
+    "id": "CEN-35",
+    "domaine": "Sites web",
+    "titre": "Bibliothèque de sections HTML/CSS Client-First",
+    "statut": "à faire",
+    "priorite": "cette semaine",
+    "compte": "Web",
+    "brief": "Suivi/07 - Design/04-sections/ : pour navigation, hero, services, preuve ou avis, galerie, tarifs, FAQ, contact, pied de page : au moins 4 variantes de structure chacune, en HTML Client-First et CSS à variables, responsive, accessibles, sans dépendance. Un index des combinaisons compatibles avec chaque direction artistique.",
+    "etat": "Créée le 2026-11-25 depuis Central. Pas commencée.",
+    "date": "2026-11-24"
+  },
+  {
+    "id": "CEN-36",
+    "domaine": "Sites web",
+    "titre": "Banque de directions artistiques 2/2 (10 fiches) et choix par secteur",
+    "statut": "à faire",
+    "priorite": "cette semaine",
+    "compte": "Web",
+    "brief": "Suivi/07 - Design/03-directions-artistiques-2.md : 10 fiches de plus, même format, distinctes des 10 premières (comparer avant d'écrire). Tableau secteur vers 3 directions candidates, dans 05-choix-par-secteur.md.",
+    "etat": "Créée le 2026-11-25 depuis Central. Pas commencée.",
+    "date": "2026-11-24"
+  },
+  {
+    "id": "CEN-37",
+    "domaine": "Sites web",
+    "titre": "3 sites de démonstration, 3 directions et 3 structures différentes",
+    "statut": "à faire",
+    "priorite": "cette semaine",
+    "compte": "Web",
+    "brief": "Restauration, artisan ou service, beauté ou santé : 3 à 5 pages chacun, publiés sur des adresses de démonstration et annoncés comme exemples, sans faux client ni faux avis. Chronométrer chaque site (01-processus-site-client-et-suivi-temps.xlsx) pour vérifier les 10 h prévues. Les ajouter à la page Réalisations. À démarrer après CEN-35. Repris par le compte Sites dès qu'il existe (CEN-28).",
+    "etat": "Créée le 2026-11-25 depuis Central. Pas commencée.",
+    "date": "2026-11-24"
+  },
+  {
+    "id": "WEB-035",
+    "domaine": "Sites web",
+    "titre": "Premier envoi : 20 e-mails et 15 appels (restauration)",
+    "statut": "à faire",
+    "priorite": "aujourd'hui",
+    "compte": "Moi",
+    "brief": "1. Après WEB-031 et WEB-032, génère 20 brouillons avec 06-generer-mails.py (modèle A, Restauration, « Aucun site connu » avec e-mail) et envoie-les.\n2. Entre 14 h 30 et 17 h, appelle 15 restaurants de la liste avec 07-script-appel.docx.\n3. Note chaque résultat dans le tableau de suivi le jour même.\n4. Bloque le même créneau demain.",
+    "etat": "Créée le 2026-11-25 depuis Central. Pas commencée.",
+    "date": "2026-11-24",
+    "livrable": "WebDesign/Suivi/02 - Prospection/07-script-appel.docx"
   }
 ]
