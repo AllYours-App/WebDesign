@@ -27,7 +27,7 @@ Fait :
 - Procédures : plan de lancement client à dupliquer (phases 6 à 8), mode d'emploi client, panorama des outils (phase 5).
 
 En cours :
-- Rien.
+- Rien. File : CEN-29, CEN-30, CEN-31, CEN-32, CEN-33, CEN-34, CEN-35, CEN-36, CEN-37 (pas commencées).
 
 Bloqué :
 - Rien ne bloque la prospection : relecture juridique retirée par décision de Moi (2026-11-22).
@@ -42,9 +42,8 @@ Incohérences relevées (WEB-002, 010, 011, 019 à 025) :
 - Plan : toutes les incohérences relevées sont réglées (WEB-021 à 024).
 
 Prochaine étape :
-- À Moi : WEB-030, WEB-031, WEB-032, WEB-034 (voir A-FAIRE-PAR-TOI.md).
+- À Moi : WEB-030 (ACRE demandée, code impots.gouv attendu par courrier, reste la CFE), WEB-031, WEB-032, WEB-035 (voir A-FAIRE-PAR-TOI.md). WEB-034 faite par Moi.
+- Compte Web : CEN-29 en premier (liste de prospects à retirer du repo public).
 
-File vide.
-
-Mis à jour le : 2026-11-24
-Rythme : 2 tâches terminées sur la dernière fenêtre de 5 h
+Mis à jour le : 2026-11-25
+Rythme : 0 tâche terminée sur la dernière fenêtre de 5 h
